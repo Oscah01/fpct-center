@@ -7,6 +7,7 @@ import About from './Components/About/About'
 import Campus from './Components/Campus/Campus'
 import Testimonial from './Components/Testmonial/Testimonial'
 import Contacts from './Components/Contacts/Contacts'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -14,15 +15,16 @@ const App = () => {
       <Navbar/>
       <Page/>
       <div className="container" >
+        <Tittle subTitle='Message from Our National Leaders' title=''/>
+        <Testimonial/>
         <Tittle subTitle='Our Program' title='What we Offer'/>
       <Programs/>
       <About/>
-        <Tittle subTitle='Gellery' title='Center Photos'/>
+        <Tittle subTitle='Gallery' title='Center Photos'/>
          <Campus/>
-        <Tittle subTitle='LEADERSHIP TEAM & ADMINISTRATIONS' title='What Pentecostians say'/>
-        <Testimonial/>
         <Tittle subTitle='Contact us' title='Get in Touch'/>
         <Contacts/>
+        <Footer/>
       </div>
     </div>
   )
