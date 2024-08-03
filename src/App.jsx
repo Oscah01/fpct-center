@@ -17,13 +17,13 @@ const App = () => {
       <div className="container" >
         <Tittle subTitle='Message from Our National Leaders' title=''/>
         <Testimonial/>
-        <Tittle subTitle='Our Program' title='What we Offer'/>
+        <Tittle subTitle='Recent events' title=''/>
       <Programs/>
-      <About/>
         <Tittle subTitle='Gallery' title='Center Photos'/>
          <Campus/>
         <Tittle subTitle='Contact us' title='Get in Touch'/>
         <Contacts/>
+        <About/>
         <Footer/>
       </div>
     </div>

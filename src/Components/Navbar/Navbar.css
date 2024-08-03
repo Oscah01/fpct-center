@@ -11,7 +11,10 @@ nav {
     justify-content: space-between;
     z-index: 150;
     background-color: rgba(208, 148, 17, 0.914);
+    border: solid red;
 }
+
+
 
 /* Logo styles */
 .logo {
@@ -89,6 +92,8 @@ nav ul li:hover .dropdown {
 @media (max-width: 1000px) {
     .logo {
         width: 140px;
+        
+        margin-right: 70%;
     }
 
     nav ul li {

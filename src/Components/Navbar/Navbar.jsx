@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+    <nav >
       <img src={logo} alt="Fpct logo" className='logo'/>
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} className="menu-icon" />

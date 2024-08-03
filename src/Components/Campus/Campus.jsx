@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Campus.css';
 
-import gallery1 from '../../assets/center3.JPG';
+import gallery1 from '../../assets/center1.JPG';
 import gallery2 from '../../assets/center2.JPG';
 import gallery3 from '../../assets/center3.JPG';
 import gallery4 from '../../assets/center4.JPG';
@@ -11,9 +11,9 @@ import gallery7 from '../../assets/center7.JPG';
 import gallery8 from '../../assets/center8.JPG';
 import gallery9 from '../../assets/center9.JPG';
 import gallery10 from '../../assets/center10.JPG';
-import gallery11 from '../../assets/center10.JPG';
-import gallery12 from '../../assets/center11.JPG';
-import gallery13 from '../../assets/center12.JPG';
+import gallery11 from '../../assets/center11.JPG';
+import gallery12 from '../../assets/center12.JPG';
+import gallery13 from '../../assets/center13.JPG';
 import gallery14 from '../../assets/center14.JPG';
 import gallery15 from '../../assets/center15.JPG';
 import gallery16 from '../../assets/center16.JPG';
@@ -77,57 +77,29 @@ const Campus = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    if (selectedImage) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-  }, [selectedImage]);
-
   const handleClick = (image, index) => {
     setSelectedImage(image);
     setCurrentIndex(index);
   };
 
-  const closeLightbox = () => {
-    setSelectedImage(null);
-  };
-
-  const showNextImage = (e) => {
-    e.stopPropagation();
-    const nextIndex = (currentIndex + 1) % images.length;
-    setSelectedImage(images[nextIndex]);
-    setCurrentIndex(nextIndex);
-  };
-
-  const showPrevImage = (e) => {
-    e.stopPropagation();
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    setSelectedImage(images[prevIndex]);
-    setCurrentIndex(prevIndex);
-  };
-
   return (
     <div className='campus'>
+      {selectedImage && (
+        <div className="enlarged-image-container">
+          <img src={selectedImage} alt="Enlarged view" className="enlarged-image" />
+        </div>
+      )}
       <div className="gallery">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Gallery ${index + 1}`}
-            className={selectedImage === image ? 'thumbnail active' : 'thumbnail'}
+            className={`thumbnail ${selectedImage === image ? 'active' : ''}`}
             onClick={() => handleClick(image, index)}
           />
         ))}
       </div>
-      {selectedImage && (
-        <div className="lightbox" onClick={closeLightbox}>
-          <button className="nav-button prev" onClick={showPrevImage}>&lt;</button>
-          <img src={selectedImage} alt="Enlarged view" className="lightbox-image" />
-          <button className="nav-button next" onClick={showNextImage}>&gt;</button>
-        </div>
-      )}
       <button className='btn'>See more</button>
     </div>
   );

@@ -33,10 +33,12 @@ function Page() {
         ))}
       </div>
       <div className="page-text">
+        <span className='allall'>
         <h1>We Ensure better education for better World</h1>
         <p>We are Free Pentecoste Center. Our cutting-edge curriculum 
           is designed to empower students with knowledge, skills, and experiences 
           needed to excel in the dynamic field of education.</p>
+        </span>
         <button className='btn'>Explore more</button>
       </div>
     </div>
