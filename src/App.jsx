@@ -1,7 +1,6 @@
-import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Page from './Components/Page/Page'
-import Programs from './Components/Programs/Program'
+import NewsCentre from './Components/NewsCentre/NewsCentre'
 import Tittle from './Components/Tittle/Tittle'
 import About from './Components/About/About'
 import Campus from './Components/Campus/Campus'
@@ -14,8 +13,8 @@ const App = () => {
       <Navbar/>
       <Page/>
       <div className="container" >
-        <Tittle subTitle='Our Program' title='What we Offer'/>
-      <Programs/>
+      <Tittle subTitle='News Centre' title='Our Recent News'/>
+      <NewsCentre/>
       <About/>
         <Tittle subTitle='Gellery' title='Center Photos'/>
          <Campus/>
