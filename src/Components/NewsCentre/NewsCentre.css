@@ -3,28 +3,43 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 768px) {
+    .news-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10vh;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+  }
+
 .news-hr {
     width: 30%;
-    border: 1px solid rgb(30, 30, 63);
-    background-color: rgb(30, 30, 63);
+    border: 1px solid purple;
+}
+
+.main-head {
+    color: purple;
+    font-size: larger;
+    cursor: pointer;
 }
 
 .news-hr2 {
     width: 50%;
-    border: 1px solid rgb(30, 30, 63);
-    background-color: rgb(30, 30, 63);
+    border: 1px solid purple;
 }
 
 .news-hr3 {
     width: 40%;
-    border: 1px solid rgb(30, 30, 63);
-    background-color: rgb(30, 30, 63);
+    border: 1px solid purple;
 }
 
 .posts-main-div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8vh;
+    margin-top: 5vh;
 }
 .posts-article {
     display: flex;
@@ -33,21 +48,112 @@
 
 .post-img {
     width: 8vw;
-    height: 15vh;
+    height: 12vh;
     object-fit: cover;
 }
 
 .post-timing {
     display: flex;
     align-items: center;
+    justify-items: center;
+    margin-top: 2vh;
 }
 
 .post-title {
     text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.post-title:hover {
+    color: blue;
+}
+
+.calendar {
+    width: 3vw;
+    height: 3vh;
+}
+
+.date {
+    font-family: serif;
+    font-size: 12px;
+    margin-left: 4px;
+    margin-top: 3px;
 }
 
 .announcements-main-div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+
+.announcements-article {
+    display: flex;
+    gap: 1vw;
+}
+
+.announcement-img {
+    width: 2vw;
+    height: 3vh;
+    object-fit: cover;
+}
+
+.announcement-title {
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+}
+
+.clock {
+    width: 2vw;
+    height: 2vh;
+}
+
+.separator {
+    display: block;
+    width: 1px; 
+    background-color: #333; 
+    height: 2vh; 
+    margin: 0 10px;
+}
+
+.announcement-info {
+    display: flex;
+}
+
+.icon-and-date {
+    font-family: serif;
+    font-size: 12px;
+}
+
+.pdf-link {
+    display: flex;
+    gap: 10px;
+    font-family: serif;
+    font-size: 12px;
+    color: darkblue;
+}
+
+.docs-main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+
+.docs-article {
+    display: flex;
+    gap: 1vw;
+}
+
+.docsPdf {
+    color: red;
+    font-size: 20px;
+}
+
+.document-link {
+    color: black;
+}
+
+.document-link:hover {
+    color: blue
 }
