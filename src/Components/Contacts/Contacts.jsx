@@ -14,23 +14,17 @@ const Contacts = () => {
             Your feedback , questions and suggestions are more important to us as we strive to provide 
             exceptional service to our Church 
            </p>
-            
+            <br/>
            <ul>
-            <li><FaEnvelope className='icon'/>   oscar@fpct.church</li>
-            <li><FaPhone className='icon'/>    +255 622562572</li>
+            <li>{Date.now}</li> <br/>
+            <li><FaEnvelope className='icon'/>   oscar@fpct.church</li> <br/>
+            <li><FaPhone className='icon'/> 
+              +255 622562572
+            </li><br/>
             <li> <FaMapLocation className='icon'/>   Kurasini</li>
            </ul>
         </div>
         <div className="contact-col">
-         <form>
-            <lebel>Your name</lebel>
-            <input type='text' name='name' placeholder='Enter your name' required/>
-            <lebel>Phone number</lebel>
-            <input type='tel' name='phone' placeholder='Enter your mobile number' required/>
-            <lebel>Write your messages here</lebel>
-            <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
-            <button type='submit' className='btn'>Submit now</button>
-         </form>
          <span></span>
         </div>
       </div>

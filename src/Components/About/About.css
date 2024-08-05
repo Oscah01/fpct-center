@@ -1,49 +1,163 @@
-.about{
-    margin: 100px ;
+.about {
+    color: #676767;;
+    margin-top: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
 }
 
-.about-left{
+.about-left {
     flex-basis: 40%;
     position: relative;
-
-}
-.about-right{
-    flex-basis: 456%;
-
 }
 
-.about-img{
-     width: 100%;
-     border-radius: 10px;
+.about-right {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.play-icon{
- width: 60px;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-
+.about-img {
+    height: 60vh;
+    width: 80vh;
+    border-radius: 10px;
 }
-
-.about h3{
+.about h3 {
     font-weight: 600;
-    font-weight: 16px;
-    color: #212EA0;
+    font-size: 16px;
+    color: #676767;
 }
 
-.about h2{
+.about h2 {
     font-size: 35px;
-    color: #000F38;
+    color: #676767;
     margin: 10px 0;
     max-width: 400px;
 }
 
-.about p{
+.about p {
     color: #676767;
     margin-bottom: 15px;
+}
+
+.missions {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+
+.vission {
+    color: #676767;
+    flex-basis: 40%;
+    position: relative;
+}
+
+.mission {
+    color: #676767;
+    flex-basis: 45%;
+    margin-left: 20%;
+}
+
+.faith {
+    color: #676767;
+    margin-left: 500px;
+    margin-right: 100px;
+}
+
+.foundations {
+    color: #676767;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.center-photos h2 {
+    color: #676767;
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+}
+
+.carousel img {
+    height: 180px;
+    width: auto;
+    margin: 0 25px;
+    /* transition: transform 0.2s ease-in-out; */
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #676767;;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel .prev {
+    left: 100px;
+}
+
+.carousel .next {
+    right:100px;
+}
+
+.map h2{
+    text-align: center;
+    margin-top: 50px;
+}
+#google-map{
+    margin-top: 10rem;
+    height: 95vh;
+    width: 60%;
+
+}
+
+.map{
+    color: #676767;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -100px;
+}
+
+.fpct-location{
+    color: #676767;
+    margin-top: 100px;
+    margin-left: 500px;
+    text-align: center;
+}
+
+.Contacts ul li {
+    color: #676767;
+    list-style: none;
 }

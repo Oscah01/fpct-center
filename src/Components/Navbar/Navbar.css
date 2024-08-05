@@ -1,31 +1,183 @@
-nav{
-    width:100%;
-    /* background-color: #333; */
-    color: #fff;
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* General styles for nav */
+nav {
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
-
+    /* background-color: rgba(253, 253, 251, 0.03); */
+    background-color: none;
+    height: 90px;
+    margin-right: 130px;
 }
 
-.logo{
+
+
+/* Logo styles */
+.logo {
+    margin-top: 10px;
+    margin-left: 50px;
     width: 110px;
-    margin-left: -140px;
+    height: 100px;
+    position:static;
+    z-index: 1000; 
+    background-color: none;
 
 }
 
+/* Navigation list styles */
+nav ul {
+    display: flex;
+    margin-top: 60px;
+    color: black;
+    z-index: 160;
+    background-color: none;
+
+}
+
+/* Navigation list item styles */
 nav ul li {
-    display: inline-block;
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
+    background-color: none;
+    position: relative; /* For dropdown positioning */
+}
+nav ul li:hover{
+    color: #b57d0e;
 }
 
-.dark-nav{
-    background-color: #212EA0;
+/* Dropdown menu styles */
+.dropdown {
+    position: absolute;
+    margin-top: 2px;
+    color: #b57d0e;
+    background-color: #b57d0e ;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none; /* Hide by default */
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown li {
+    padding: 8px 16px;
+    white-space: nowrap;
+}
+
+.dropdown li:hover {
+    background-color: #000000;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Chevron icon styles */
+.chevron {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+    transform: rotate(180deg);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Media query for screens less than 1000px */
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+        
+        margin-right: 70%;
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+    }
+}
+
+/* Media query for screens less than 840px */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 0;
+        flex-direction: column; /* Stack logo and menu vertically */
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0;
+        z-index: 100; /* Ensure it's above other elements */
+        width: 80%;
+        padding-top: 70px;
+        transform: translateX(100%); /* Hide off-screen initially */
+        transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul.show {
+        transform: translateX(0); /* Show menu */
+    }
+
+    nav ul li {
+        margin: 15px 10px;
+        color: white; /* Ensure text color is readable */
+    }
+
+    .dropdown {
+        display: none; /* Hide dropdown on mobile */
+    }
+    .chevron{
+        display: none; /* Hide chevron on mobile */
+
+    }
+
+    /* Hamburger menu styles */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 101; /* Ensure it is above the menu */
+    }
+
+    .hamburger .menu-icon {
+        font-size: 24px;
+        color: white;
+    }
+}
+
+/* Styles for close icon */
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 101; /* Ensure it is above the menu */
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #d09411;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b57d0e;
 }
