@@ -1,7 +1,6 @@
-// App.js
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
+import NewsCentre from './Components/NewsCentre/NewsCentre'
 import Page from './Components/Page/Home';
 import Programs from './Components/Updates/Updates';
 import Tittle from './Components/Tittle/Tittle';
@@ -27,8 +26,8 @@ const App = () => {
           <Route path="/" element={
             <div className="container">
               <Page />
-              <Tittle subTitle='Recent events' title='' />
-              <Programs />
+              <Tittle subTitle='News Centre' title='Our Recent News'/>
+              <NewsCentre/>
               <Tittle subTitle='Contact us' title='Get in Touch' />
               <Contacts />
             </div>
@@ -46,7 +45,6 @@ const App = () => {
           <Route path="/sermons" element={<Sermons/>} />
         </Routes>
         <Footer />
-      </div>
     </Router>
   );
 };
