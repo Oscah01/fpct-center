@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Campus.css';
+import './Gallery.css';
 
 import gallery1 from '../../assets/center1.JPG';
 import gallery2 from '../../assets/center2.JPG';
@@ -73,7 +73,7 @@ const images = [
   gallery58, gallery59
 ];
 
-const Campus = () => {
+const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -105,4 +105,4 @@ const Campus = () => {
   );
 };
 
-export default Campus;
+export default Gallery;

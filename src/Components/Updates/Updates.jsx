@@ -1,7 +1,7 @@
 import React from 'react';
-import './Program.css'
+import './Updates.css'
 
-const Programs = () => {
+const Updates = () => {
   return (
     <ul className='programs'>
         <li className="program">
@@ -18,4 +18,4 @@ const Programs = () => {
   )
 }
 
-export default Programs
+export default Updates

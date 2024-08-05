@@ -1,37 +1,37 @@
 /* General styles for nav */
 nav {
     width: auto;
-    color: #ffffff;
-    padding: 4px 0;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 150;
-    background-color: rgba(208, 148, 17, 0.914);
-    border: solid red;
+    /* background-color: rgba(253, 253, 251, 0.03); */
+    background-color: none;
+    height: 90px;
+    margin-right: 130px;
 }
 
 
 
 /* Logo styles */
 .logo {
+    margin-top: 10px;
+    margin-left: 50px;
     width: 110px;
     height: 100px;
-    margin-left: -10px;
-    /* position:static; */
-    top: 15px;
-    z-index: 101; 
+    position:static;
+    z-index: 1000; 
+    background-color: none;
+
 }
 
 /* Navigation list styles */
 nav ul {
     display: flex;
-    padding: 0;
-    margin: 0;
+    margin-top: 60px;
+    color: black;
     z-index: 160;
+    background-color: none;
+
 }
 
 /* Navigation list item styles */
@@ -39,21 +39,20 @@ nav ul li {
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
+    background-color: none;
     position: relative; /* For dropdown positioning */
 }
-
-/* Dark navbar styles */
-.dark-nav {
-    background-color: #212EA0;
+nav ul li:hover{
+    color: #b57d0e;
 }
 
 /* Dropdown menu styles */
 .dropdown {
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    color: black;
+    margin-top: 2px;
+    color: #b57d0e;
+    background-color: #b57d0e ;
+    color: rgb(255, 255, 255);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     display: none; /* Hide by default */
     padding: 10px;
@@ -66,7 +65,7 @@ nav ul li {
 }
 
 .dropdown li:hover {
-    background-color: #f1f1f1;
+    background-color: #000000;
 }
 
 /* Show dropdown on hover */

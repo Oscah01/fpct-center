@@ -1,12 +1,12 @@
 import React, { useRef } from 'react'
-import './Testimonial.css'
+import './Management.css'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import mchungaji1 from '../../assets/Mch. Elias Ndaji.png'
 import mchungaji2 from '../../assets/Mch. George Mwita.png'
 import mchungaji3 from '../../assets/Mch. Jackson Muna.png'
 import mchungaji4 from '../../assets/Mch. Stevie Mulenga.png'
 
-const Testimonial = () => {
+const Management = () => {
 
     const slider = useRef();
     let tx = 0;
@@ -123,4 +123,4 @@ const Testimonial = () => {
   )
 }
 
-export default Testimonial
+export default Management

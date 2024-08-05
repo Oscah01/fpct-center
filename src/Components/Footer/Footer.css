@@ -3,12 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #797979;
-    padding: 15px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 19, 174);
+    height: 30vh;
+
 }
 
 .footer ul li{
     list-style: none;
     display: inline-block;
-    margin-left: 20px;
+    margin-top: 1px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: absolute;
+    
 }
