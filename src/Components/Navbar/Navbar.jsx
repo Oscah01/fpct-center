@@ -1,19 +1,18 @@
-// src/Components/Navbar/Navbar.jsx
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logos.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faBars, faTimes, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState({
     services: false,
-    about: false,
     resource: false,
+    languages: false,
   });
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,14 +36,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className={sticky ? 'sticky' : ''}>
       <img src={logo} alt="Fpct logo" className='logo' />
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} className="menu-icon" />
       </div>
       <ul className={`${menuOpen ? 'show' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li>
+          <NavLink exact to="/" className={({ isActive }) => isActive ? "active-link" : ""}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""}>
+            About Us
+          </NavLink>
+        </li>
         
         <li 
           onMouseEnter={() => toggleDropdown('services')} 
@@ -57,11 +64,10 @@ const Navbar = () => {
           />
           {isDropdownOpen.services && (
             <ul className="dropdown">
-            <li><Link to="/spirituals">Spirituals Services</Link></li>
-            <li><Link to="/conferences">Conferences</Link></li>
-            <li><Link to="/seminars">Seminars</Link></li>
-            <li><Link to="/workshops">Workshops</Link></li>
-            
+              <li><NavLink to="/spirituals" className={({ isActive }) => isActive ? "active-link" : ""}>Spiritual Services</NavLink></li>
+              <li><NavLink to="/conferences" className={({ isActive }) => isActive ? "active-link" : ""}>Conferences</NavLink></li>
+              <li><NavLink to="/seminars" className={({ isActive }) => isActive ? "active-link" : ""}>Seminars</NavLink></li>
+              <li><NavLink to="/parking" className={({ isActive }) => isActive ? "active-link" : ""}>Parking & Transport</NavLink></li>
             </ul>
           )}
         </li>
@@ -76,16 +82,34 @@ const Navbar = () => {
           />
           {isDropdownOpen.resource && (
             <ul className="dropdown">
-            <li><Link to="/biblestudy">Bible study & materials</Link></li>
-            <li><Link to="/sermons">Sermons & notes</Link></li>
-            <li><Link to="/gallery">Photos</Link></li>
+              <li><NavLink to="/biblestudy" className={({ isActive }) => isActive ? "active-link" : ""}>Bible study & materials</NavLink></li>
+              <li><NavLink to="/sermons" className={({ isActive }) => isActive ? "active-link" : ""}>Sermons & notes</NavLink></li>
+              <li><NavLink to="/gallery" className={({ isActive }) => isActive ? "active-link" : ""}>Photos</NavLink></li>
             </ul>
           )}
         </li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/Management">Management</Link></li>
-        <li><Link to="/updates">News & Updates</Link></li>
-        <li><Link to="/contacts">Contact us</Link></li>
+        <li><NavLink to="/Management" className={({ isActive }) => isActive ? "active-link" : ""}>Management</NavLink></li>
+        <li><NavLink to="/Booking" className={({ isActive }) => isActive ? "active-link" : ""}>Booking</NavLink></li>
+        <li><NavLink to="/contacts" className={({ isActive }) => isActive ? "active-link" : ""}>Contact us</NavLink></li>
+
+        <li 
+          onMouseEnter={() => toggleDropdown('languages')} 
+          onMouseLeave={() => toggleDropdown('languages')}
+        >
+          <FontAwesomeIcon icon={faGlobe}  className='lang'/>
+          <FontAwesomeIcon 
+            icon={faChevronDown} 
+            className={`chevron ${isDropdownOpen.languages ? 'rotate' : ''}`} 
+          />
+          {isDropdownOpen.languages && (
+            <ul className="dropdown">
+              <li><NavLink to="/en" className={({ isActive }) => isActive ? "active-link" : ""}><span className="flag-icon flag-icon-us"></span> English</NavLink></li>
+              <li><NavLink to="/sw" className={({ isActive }) => isActive ? "active-link" : ""}><span className="flag-icon flag-icon-us"></span> Kiswahili</NavLink></li>
+              <li><NavLink to="/es" className={({ isActive }) => isActive ? "active-link" : ""}><span className="flag-icon flag-icon-es"></span> Spanish</NavLink></li>
+              <li><NavLink to="/fr" className={({ isActive }) => isActive ? "active-link" : ""}><span className="flag-icon flag-icon-fr"></span> French</NavLink></li>
+            </ul>
+          )}
+        </li>
       </ul>
     </nav>
   );
