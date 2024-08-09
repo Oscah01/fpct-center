@@ -84,7 +84,7 @@ const Navbar = () => {
             <ul className="dropdown">
               <li><NavLink to="/biblestudy" className={({ isActive }) => isActive ? "active-link" : ""}>Bible study & materials</NavLink></li>
               <li><NavLink to="/sermons" className={({ isActive }) => isActive ? "active-link" : ""}>Sermons & notes</NavLink></li>
-              <li><NavLink to="/gallery" className={({ isActive }) => isActive ? "active-link" : ""}>Photos</NavLink></li>
+              <li><NavLink to="/gallery" className={({ isActive }) => isActive ? "active-link" : ""}>Gallery</NavLink></li>
             </ul>
           )}
         </li>
