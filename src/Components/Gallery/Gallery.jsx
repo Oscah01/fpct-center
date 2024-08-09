@@ -33,45 +33,41 @@ import gallery58 from '../../assets/center58.JPG';
 import gallery59 from '../../assets/center59.JPG';
 
 const images = [
-  gallery1, gallery2, gallery3,  gallery8,
-   gallery12,  gallery14, gallery15,
-   gallery19,   gallery22,
-  gallery24,   gallery28, 
-   gallery31, gallery32,   
-  gallery37, gallery38,  gallery40, gallery41, gallery42, 
-  gallery46,  gallery48, gallery49, gallery50,
-  gallery51, gallery52, gallery53, gallery54, gallery55,  gallery57,
-  gallery58, gallery59
+  gallery1, gallery2, gallery3, gallery8, gallery12, gallery14, gallery15,
+  gallery19, gallery22, gallery24, gallery28, gallery31, gallery32,
+  gallery37, gallery38, gallery40, gallery41, gallery42, gallery46,
+  gallery48, gallery49, gallery50, gallery51, gallery52, gallery53,
+  gallery54, gallery55, gallery57, gallery58, gallery59
 ];
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const imagesPerPage = 6; // Number of images per page (2 rows of 3 columns)
+  const totalPages = Math.ceil(images.length / imagesPerPage);
 
-  const handleClick = (image, index) => {
-    setSelectedImage(image);
-    setCurrentIndex(index);
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPages);
   };
 
+  const handleBack = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
+  };
+
+  const displayedImages = images.slice(currentIndex * imagesPerPage, (currentIndex + 1) * imagesPerPage);
+
   return (
-    <div className='campus'>
-      {selectedImage && (
-        <div className="enlarged-image-container">
-          <img src={selectedImage} alt="Enlarged view" className="enlarged-image" />
-        </div>
-      )}
-      <div className="gallery">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Gallery ${index + 1}`}
-            className={`thumbnail ${selectedImage === image ? 'active' : ''}`}
-            onClick={() => handleClick(image, index)}
-          />
+    <div className="gallery-container">
+      <div className="gallery-grid">
+        {displayedImages.map((image, index) => (
+          <div key={index} className="gallery-item">
+            <img src={image} alt={`Gallery ${index + 1}`} className="gallery-image" />
+          </div>
         ))}
       </div>
-      <button className='btn'>See more</button>
+      <div className="gallery-controls">
+        <button className="btn" onClick={handleBack}>Back</button>
+        <button className="btn" onClick={handleNext}>Next</button>
+      </div>
     </div>
   );
 };

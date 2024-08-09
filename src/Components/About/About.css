@@ -4,6 +4,11 @@ body {
     font-family: 'Open Sans', sans-serif; 
     color: #676767; 
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
 .about, .missions, .vission, .mission, .faith, .foundations, .carousel, .carousel-container, .map, .fpct-location, .contacts, .map-abouts, .user-infos, .review-about, .testimonials h2 {
     font-family: 'Open Sans', sans-serif; /* Ensure font consistency */
@@ -22,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .about-left {
@@ -238,3 +243,55 @@ text-align: center;
         margin-top: 80px;
         text-align: center;
     }
+    .gallery-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .gallery-wrappers {
+        display: flex;
+        overflow-x: hidden;
+        width: 80%;
+        white-space: nowrap;
+      }
+      
+      .gallerys {
+        display: flex;
+        width: max-content;
+      }
+      
+      .gallery-items {
+        flex: 0 0 auto; /* Prevent items from shrinking or growing */
+        width: 200px; /* Adjust as necessary */
+        height: 200px; /* Adjust as necessary */
+        margin-right: 10px; /* Space between images */
+      }
+      
+      .gallery-images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .gallery-controls {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 20px;
+      }
+      
+      .btn {
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .btn:hover {
+        background-color: #e67e22;
+      }
+      
