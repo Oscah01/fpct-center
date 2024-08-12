@@ -7,15 +7,15 @@ const Parking = () => {
   return (
     <div className="parking">
       <div className="parking-menu">
-        <h1>Parking & Transportation</h1>
-        <h2>Parking</h2>
+        <h1><strong>Parking & Transportation</strong></h1>
+        <h2><strong>Parking</strong></h2>
         <h3>Valet Parking</h3>
         <p>Valet parking is offered at our Center.</p>
         <h3>Self Parking</h3>
         <p>Self Parking is available at our Hotel</p>
         <h4 className='parking-span'>Free</h4>
         
-        <h2>Transportation</h2>
+        <h2><strong>Transportation</strong></h2>
         <h3>Getting here</h3>
         <div className="dropdown-container">
           <select className="dropdown" onChange={() => setIsOpen(!isOpen)}>
@@ -58,7 +58,7 @@ const Parking = () => {
         Transportation is available 24/7 except for VIP transport,
         which needs to be booked in advance. Fees are based on trips 
         within the city of Dar es Salaam. For additional information,
-        please contact: +255 764 70 1234 or daressalaam.kilimanjaro@hyatt.com.</p>
+        please contact: +255 622562572 or info@fpctcenter.co.tz.</p>
        </div>
        <div className='getting-around-menu'>
        <h2>Half-Day Car Hire</h2>
@@ -67,7 +67,7 @@ const Parking = () => {
         Transportation is available 24/7 except for VIP transport,
         which needs to be booked in advance. Fees are based on trips
           within the city of Dar es Salaam. 
-        For additional information, please contact: +255 764 70 1234 or daressalaam.kilimanjaro@hyatt.com.</p>
+        For additional information, please contact: +255 622562572 or info@fpctcenter.co.tz</p>
        </div>
       </div>
       </div>

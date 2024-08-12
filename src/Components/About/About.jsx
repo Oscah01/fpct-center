@@ -94,7 +94,7 @@ const About = () => {
                     <div className="gallerys">
                         {repeatedImages.map((image, index) => (
                             <div key={index} className="gallery-items">
-                                <img src={image} alt={`Gallery ${index + 1}`} className="gallery-images" />
+                                <img src={image} alt={`Gallery ${index + 15}`} className="gallery-images" />
                             </div>
                         ))}
                     </div>
@@ -184,12 +184,7 @@ const About = () => {
 
             <div className='testimonials'>
                 <h2>What people say about Us</h2>
-                <span className='next-arrows'>
-                    <FaArrowLeft onClick={slideForward} />
-                </span>
-                <span className='back-arrows'>
-                    <FaArrowRight onClick={slideBackward} />
-                </span>
+                
                 <div className='slider'>
                     <ul ref={slider}>
                         <li>
@@ -201,7 +196,12 @@ const About = () => {
                                         <span>Tanzania</span>
                                     </div>
                                 </div>
-                                <p className='review-about'>FpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpct</p>
+                                <p className='review-about'>
+                                I had a wonderful experience visiting FPCT Center. 
+                                The spiritual and social services offered were exceptional, and the staff’s commitment to quality and integrity was evident. 
+                                The welcoming atmosphere and meaningful support made my visit truly rewarding.
+                                 I highly recommend FPCT Center for anyone seeking spiritual guidance and community support.
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -213,7 +213,12 @@ const About = () => {
                                         <span>Tanzania</span>
                                     </div>
                                 </div>
-                                <p className='review-about'>FpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpct</p>
+                                <p className='review-about'>
+                                My visit to FPCT Center was truly enriching. 
+                                The center offers excellent spiritual and social services with a genuine commitment to their principles.
+                                 The staff was welcoming and provided invaluable support.
+                                 I highly recommend FPCT Center for anyone looking for meaningful spiritual and community assistance.
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -225,7 +230,13 @@ const About = () => {
                                         <span>Tanzania</span>
                                     </div>
                                 </div>
-                                <p className='review-about'>FpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpct</p>
+                                <p className='review-about'>
+                                I had a great experience at FPCT Center.
+                                 The spiritual and social services exceeded my expectations, 
+                                 and the staff's dedication to their values was apparent. 
+                                 The atmosphere was inviting, making my visit both comforting and valuable. 
+                                 I strongly recommend FPCT Center for those in need of sincere spiritual and community support.
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -237,10 +248,21 @@ const About = () => {
                                         <span>Tanzania</span>
                                     </div>
                                 </div>
-                                <p className='review-about'>FpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpctFpctfpct</p>
+                                <p className='review-about'>
+                                My visit to FPCT Center was incredibly rewarding. 
+                                The quality of spiritual and social services was exceptional, 
+                                and the staff's commitment was evident. The welcoming and supportive environment made a real difference. 
+                                I highly recommend FPCT Center for anyone looking for genuine care and guidance.
+                                </p>
                             </div>
                         </li>
                     </ul>
+                    <span className='next-arrows'>
+                    <FaArrowLeft onClick={slideForward} />
+                </span>
+                <span className='back-arrows'>
+                    <FaArrowRight onClick={slideBackward} />
+                </span>
                 </div>
             </div>
 

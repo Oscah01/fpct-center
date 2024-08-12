@@ -1,8 +1,6 @@
 import './Footer.css';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
-import { FaMapLocation } from 'react-icons/fa6';
-// import footer from '../../assets/prog2.jpg'
-
+import { FaTwitter, FaInstagram, FaFacebook} from 'react-icons/fa';
+import logo from '../../assets/logos.png'
 
 const Footer = () => {
   return (
@@ -20,20 +18,56 @@ const Footer = () => {
 </div>
 
     <div className='footer'> 
-           <ul className='footer-info'>
-            <li>{Date.now}</li> <br/>
-            <li><FaEnvelope className='icon'/>   oscar@fpct.church</li> <br/>
-            <li><FaPhone className='icon'/> 
-              +255 622562572
-            </li><br/>
-            <li> <FaMapLocation className='icon'/>   Kurasini</li>
+           <ul className='footer-contact'>
+          <h1>FREE PENTECOST TANZANIA CENTER</h1>
+            
+            <li className='logo-footer'><img src={logo}/> </li> <br/>
+            
            </ul>
+           <ul className='footer-contact-contact'>
+          <h1>CONTACT US</h1>
+
+            <p>Kurasini, Dar es salaam  </p>
+            <p>P.O.BOX 1469 </p>
+            <li> <strong>Email:</strong>  oscar@fpct.church</li> 
+            <li>
+            <strong>Phone:</strong>  +255 622562572
+            </li>
+            <li> </li>
+            <div className="social-links">
+              <a className='twitter' href="#">
+                <i>{<FaTwitter/>}</i>
+              </a>
+              <a className='instagram' href="#">
+                <i>{<FaInstagram/>}</i>
+              </a>
+              <a className='facebook' href="#">
+                <i>{<FaFacebook/>}</i>
+              </a>
+            </div>
+           </ul>
+           <ul className='footer-contact'>
+          <h1>USEFUL LINKS</h1>
+          <a className='kanisa' href="#">
+                <i>Kanisa</i> <br/>
+              </a>
+          <a className='shule' href="#">
+                <i>shule ya BIBLIA</i><br/>
+              </a>
+          <a className='hospitali' href="#">
+                <i>Hospitali ya Kanisa</i>
+              </a>
+            
+            
+           </ul>
+          
      
-    <p>&copy; 2024 Fpct. All rights reserved</p>
-      <ul className='footer-info'>
-        <li>Terms of service</li>
-        <li>Privacy policy</li>
-      </ul>
+      
+    </div>
+    <div className='rights'>
+
+    <p>This website is developed and maintained by <strong>FPCT CENTER DAR ES SALAAM</strong> </p>
+    <p >&copy; 2024 Fpct. All rights reserved</p>
     </div>
     </>
   )

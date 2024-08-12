@@ -29,12 +29,7 @@ const Management = () => {
   return (
     <div className='testimonials'>
      
-     <span className='next-arrow'>
-        <FaArrowLeft onClick={slideForward}/> 
-      </span>
-     <span className='back-arrow'>
-        <FaArrowRight onClick={slideBackward} />
-      </span>
+     
       <div className='slider'>
         <ul ref={slider}>
             <li>
@@ -119,6 +114,12 @@ const Management = () => {
             </li>
         </ul>
       </div>
+        <span className='next-arrow'>
+        <FaArrowLeft onClick={slideForward}/> 
+      </span>
+     <span className='back-arrow'>
+        <FaArrowRight onClick={slideBackward} />
+      </span>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 .news-container {
     display: grid;
+    padding-left: 100px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 

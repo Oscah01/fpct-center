@@ -33,10 +33,12 @@ function Page() {
       </div>
       <div className="overlay"></div>
       <div className="page-text">
-        <h1>Welcome to FPCT Center, a place of faith and community</h1>
-        <p>Join us at FPCT Center, an extension of the Free Pentecostal Church of Tanzania, 
+        <h1>Welcome to FPCT Center, a place of faith <br/> and community</h1>
+        <p>
+          Join us at FPCT Center, an extension of the Free Pentecostal Church of Tanzania,
           where we offer accommodation, versatile event halls,
-           secure parking, and catering services. Experience our supportive community through prayers and counseling.</p>
+          secure parking, and catering services. Experience our supportive community through prayers and counseling.
+        </p>
         <button className='btn-explore'>Explore more</button>
       </div>
     </div>
