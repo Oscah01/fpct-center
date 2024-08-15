@@ -1,72 +1,68 @@
-import { useState } from 'react';
-import './Gallery.css';
+import 'preline';
 
-import gallery1 from '../../assets/center1.JPG';
-import gallery2 from '../../assets/center2.JPG';
-import gallery3 from '../../assets/center3.JPG';
-import gallery8 from '../../assets/center8.JPG';
-import gallery12 from '../../assets/center12.JPG';
-import gallery14 from '../../assets/center14.JPG';
-import gallery15 from '../../assets/center15.JPG';
-import gallery19 from '../../assets/center19.JPG';
-import gallery22 from '../../assets/center22.JPG';
-import gallery24 from '../../assets/center24.JPG';
-import gallery28 from '../../assets/center28.JPG';
-import gallery31 from '../../assets/center31.JPG';
-import gallery32 from '../../assets/center32.JPG';
-import gallery37 from '../../assets/center37.JPG';
-import gallery38 from '../../assets/center38.JPG';
-import gallery40 from '../../assets/center40.JPG';
-import gallery41 from '../../assets/center41.JPG';
-import gallery42 from '../../assets/center42.JPG';
-import gallery46 from '../../assets/center46.JPG';
-import gallery48 from '../../assets/center48.JPG';
-import gallery49 from '../../assets/center49.JPG';
-import gallery50 from '../../assets/center50.JPG';
-import gallery51 from '../../assets/center51.JPG';
-import gallery52 from '../../assets/center52.JPG';
-import gallery53 from '../../assets/center53.JPG';
-import gallery54 from '../../assets/center54.JPG';
-import gallery55 from '../../assets/center55.JPG';
-import gallery57 from '../../assets/center57.JPG';
-import gallery58 from '../../assets/center58.JPG';
-import gallery59 from '../../assets/center59.JPG';
-
-const images = [
-  gallery1, gallery2, gallery3, gallery8, gallery12, gallery14, gallery15,
-  gallery19, gallery22, gallery24, gallery28, gallery31, gallery32,
-  gallery37, gallery38, gallery40, gallery41, gallery42, gallery46,
-  gallery48, gallery49, gallery50, gallery51, gallery52, gallery53,
-  gallery54, gallery55, gallery57, gallery58, gallery59
-];
 
 const Gallery = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const imagesPerPage = 6; // Number of images per page (2 rows of 3 columns)
-  const totalPages = Math.ceil(images.length / imagesPerPage);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPages);
-  };
-
-  const handleBack = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
-  };
-
-  const displayedImages = images.slice(currentIndex * imagesPerPage, (currentIndex + 1) * imagesPerPage);
-
   return (
-    <div className="gallery-container">
-      <div className="gallery-grid">
-        {displayedImages.map((image, index) => (
-          <div key={index} className="gallery-item">
-            <img src={image} alt={`Gallery ${index + 1}`} className="gallery-image" />
-          </div>
-        ))}
-      </div>
-      <div className="gallery-controls">
-        <button className="btn" onClick={handleBack}>Back</button>
-        <button className="btn" onClick={handleNext}>Next</button>
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        <div className="space-y-2">
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+        </div>
+        <div className="space-y-2">
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+        </div>
+        <div className="space-y-2">
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+        </div>
+        <div className="space-y-2">
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+          <img
+            className="w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Gallery Masonry Image"
+          />
+        </div>
       </div>
     </div>
   );

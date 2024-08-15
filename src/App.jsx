@@ -17,6 +17,9 @@ import Sermons from './Components/Sermons/Sermons';
 import Parking from './Components/Parking/Parking';
 
 
+
+
+
 const App = () => {
   return (
     <Router>
@@ -43,7 +46,7 @@ const App = () => {
           <Route path="/biblestudy" element={<Biblestudy/>} />
           <Route path="/sermons" element={<Sermons/>} />
           <Route path="/parking" element={<Parking/>} />
-
+          
         </Routes>
         <Footer />
         </div>

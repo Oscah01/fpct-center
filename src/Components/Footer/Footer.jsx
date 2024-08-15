@@ -27,11 +27,11 @@ const Footer = () => {
            <ul className='footer-contact-contact'>
           <h1>CONTACT US</h1>
 
-            <p>Kurasini, Dar es salaam  </p>
-            <p>P.O.BOX 1469 </p>
-            <li> <strong>Email:</strong>  oscar@fpct.church</li> 
+            <p>P.O.BOX 9484 </p>
+            <p> Dar es salaam  </p>
+            <li> <strong>Email:</strong>  fpctcenter@gmail.com</li> 
             <li>
-            <strong>Phone:</strong>  +255 622562572
+            <strong>Phone:</strong>  +255 754544438/ +255 717020108
             </li>
             <li> </li>
             <div className="social-links">
