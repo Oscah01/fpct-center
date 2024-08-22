@@ -1,0 +1,86 @@
+/* Conferences.css */
+.conference {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.conference-home img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.conference-text {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #211551;
+    padding: 30px;
+}
+
+.conference-text p {
+    text-align: center;
+    width: 50%;
+}
+
+.conference-cart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    box-shadow: 0 0 20px rgba(170, 133, 23, 0.218);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+    
+}
+
+.cart-item img {
+    width: 85vh;
+    height: 50vh;
+    margin-top: -40px;
+}
+
+.cart-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart-details h2 {
+    margin: 10px 0 5px;
+}
+
+.cart-details p {
+    margin: 0;
+}
+
+.cataring{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color: #141313;
+}
+
+.cataring img{
+    width: 85vh;
+    height: 50vh;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.cataring-details{
+    align-items: center;
+    margin-right: 200px;
+
+}

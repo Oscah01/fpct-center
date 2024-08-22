@@ -19,7 +19,7 @@ function Page() {
   }, [images.length]);
 
   return (
-    <div className='page container'>
+    <div className='page'>
       <div className="slideshow-container">
         {images.map((image, index) => (
           <div
@@ -31,14 +31,15 @@ function Page() {
           </div>
         ))}
       </div>
+      <div className="overlay"></div>
       <div className="page-text">
-        <span className='allall'>
-        <h1>We Ensure better education for better World</h1>
-        <p>We are Free Pentecoste Center. Our cutting-edge curriculum 
-          is designed to empower students with knowledge, skills, and experiences 
-          needed to excel in the dynamic field of education.</p>
-        </span>
-        <button className='btn'>Explore more</button>
+        <h1>Welcome to FPCT Center, a place of faith <br/> and community</h1>
+        <p>
+          Join us at FPCT Center, an extension of the Free Pentecostal Church of Tanzania,
+          where we offer accommodation, versatile event halls,
+          secure parking, and catering services. Experience our supportive community through prayers and counseling.
+        </p>
+        <button className='btn-explore'>Explore more</button>
       </div>
     </div>
   );

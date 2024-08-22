@@ -17,9 +17,9 @@ const Contacts = () => {
             <br/>
            <ul>
             <li>{Date.now}</li> <br/>
-            <li><FaEnvelope className='icon'/>   oscar@fpct.church</li> <br/>
+            <li><FaEnvelope className='icon'/>   fpctcenter@gmail.com</li> <br/>
             <li><FaPhone className='icon'/> 
-              +255 622562572
+              +255 754544438 / +255 717020108
             </li><br/>
             <li> <FaMapLocation className='icon'/>   Kurasini</li>
            </ul>
