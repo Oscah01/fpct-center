@@ -2,6 +2,8 @@
 
 /* General Container Styles */
 .page {
+ align-items: center;
+
     margin-top: 2px;
     position: relative;
     justify-content: center;
@@ -27,7 +29,7 @@
     height: 100%;
     display: none; /* Hide all slides by default */
     top: 0;
-    left: 0;
+    /* left: 0; */
   }
   
   /* Slide Images */
@@ -36,7 +38,7 @@
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover /* Ensure image covers the container while maintaining aspect ratio */
+    background-size: contain /* Ensure image covers the container while maintaining aspect ratio */
   }
   
   /* Overlay */

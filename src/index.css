@@ -1,3 +1,7 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Apply the Open Sans font globally as the default */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -6,7 +10,6 @@ body {
   box-sizing: border-box;
   font-size: 12px; /* Base font size */
 }
-
 /* Apply specific fonts to certain elements if needed */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;

@@ -15,7 +15,7 @@ import Conferences from './Components/Conferences/Conferences';
 import Biblestudy from './Components/Biblestudy/Biblestudy';
 import Sermons from './Components/Sermons/Sermons';
 import Parking from './Components/Parking/Parking';
-
+import "preline/preline";
 
 
 
@@ -46,6 +46,7 @@ const App = () => {
           <Route path="/biblestudy" element={<Biblestudy/>} />
           <Route path="/sermons" element={<Sermons/>} />
           <Route path="/parking" element={<Parking/>} />
+          <Route path="/newsCentre" element={<NewsCentre/>} />
           
         </Routes>
         <Footer />

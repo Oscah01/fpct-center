@@ -61,6 +61,7 @@ const Navbar = () => {
             <li><Link to="/conferences">Conferences</Link></li>
             <li><Link to="/seminars">Seminars</Link></li>
             <li><Link to="/workshops">Workshops</Link></li>
+            <li><Link to="/parking">Parking</Link></li>
             
             </ul>
           )}
@@ -83,8 +84,8 @@ const Navbar = () => {
           )}
         </li>
         <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/Management">Management</Link></li>
-        <li><Link to="/updates">News & Updates</Link></li>
+        <li><Link to="/Management">Administration</Link></li>
+        <li><Link to="/newsCentre">News & Updates</Link></li>
         <li><Link to="/contacts">Contact us</Link></li>
       </ul>
     </nav>
