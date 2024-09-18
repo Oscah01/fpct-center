@@ -22,22 +22,17 @@ import gallery42 from '../../assets/center42.JPG';
 import gallery46 from '../../assets/center46.JPG';
 import gallery48 from '../../assets/center48.JPG';
 import gallery49 from '../../assets/center49.JPG';
-import gallery50 from '../../assets/center50.JPG';
 import gallery51 from '../../assets/center51.JPG';
-import gallery52 from '../../assets/center52.JPG';
-import gallery53 from '../../assets/center53.JPG';
 import gallery54 from '../../assets/center54.JPG';
-import gallery55 from '../../assets/center55.JPG';
 import gallery57 from '../../assets/center57.JPG';
-import gallery58 from '../../assets/center58.JPG';
 import gallery59 from '../../assets/center59.JPG';
 
 const images = [
   gallery1, gallery2, gallery3, gallery8, gallery12, gallery14, gallery15,
   gallery19, gallery22, gallery24, gallery28, gallery31, gallery32,
   gallery37, gallery38, gallery40, gallery41, gallery42, gallery46,
-  gallery48, gallery49, gallery50, gallery51, gallery52, gallery53,
-  gallery54, gallery55, gallery57, gallery58, gallery59
+  gallery48, gallery49, gallery51,
+  gallery54, gallery57, gallery59
 ];
 
 const Gallery = () => {

@@ -1,29 +1,13 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* Apply the Open Sans font globally as the default */
 body {
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 12px; /* Base font size */
-}
-/* Apply specific fonts to certain elements if needed */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400; /* Bold font weight */
-  font-size: 20px; /* Adjust size for headings */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-p, li, span, div, input, textarea, button {
-  font-family: 'Hind', sans-serif;
-  font-weight: 400; /* Normal weight */
-  font-size: 14px; /* Adjust size for other text */
-}
-
-button {
-  font-family: 'Tajawal', sans-serif;
-  font-size: 14px; /* Adjust size for buttons */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

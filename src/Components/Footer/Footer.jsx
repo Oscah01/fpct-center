@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
            </ul>
            <ul className='footer-contact'>
-          <h1>USEFUL LINKS</h1>
+          <h2>USEFUL LINKS</h2>
           <a className='kanisa' href="#">
                 <i>Kanisa</i> <br/>
               </a>

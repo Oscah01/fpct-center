@@ -1,46 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import './Home.css';
+// src/components/Page.jsx
+import  { useEffect, useState } from "react";
+import SliderContent from "./SliderContent";
+import Dots from "./Dots"; // Ensure correct path
+import Arrows from "./Arrows"; // Ensure correct path
+import SlideImage from "./SlideImage"; // Ensure correct path
+import "./Home.css";
 
-import image1 from '../../assets/pent1.jpg';
-import image2 from '../../assets/pent2.jpg';
-import image3 from '../../assets/pent3.jpg';
-import image4 from '../../assets/center20.JPG';
-import image5 from '../../assets/center5.JPG';
+const len = SlideImage.length - 1;
 
 function Page() {
-  const [slideIndex, setSlideIndex] = useState(0);
-  const images = [image1, image2, image3, image4, image5];
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSlideIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [activeIndex]);
 
   return (
-    <div className='page'>
-      <div className="slideshow-container">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`mySlides ${index === slideIndex ? 'fade' : ''}`}
-            style={{ display: index === slideIndex ? 'block' : 'none' }}
-          >
-            <img src={image} alt={`Slide ${index}`} className="slide-image" />
-          </div>
-        ))}
-      </div>
-      <div className="overlay"></div>
-      <div className="page-text">
-        <h1>Welcome to FPCT Center, a place of faith <br/> and community</h1>
-        <p>
-          Join us at FPCT Center, an extension of the Free Pentecostal Church of Tanzania,
-          where we offer accommodation, versatile event halls,
-          secure parking, and catering services. Experience our supportive community through prayers and counseling.
-        </p>
-        <button className='btn-explore'>Explore more</button>
-      </div>
+    <div className="sliderss-container">
+      <SliderContent activeIndex={activeIndex} sliderImage={SlideImage} />
+      <Arrows
+        prevSlide={() =>
+          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+        }
+        nextSlide={() =>
+          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+        }
+      />
+      <Dots
+        activeIndex={activeIndex}
+        sliderImage={SlideImage}
+        onclick={(activeIndex) => setActiveIndex(activeIndex)}
+      />
     </div>
   );
 }

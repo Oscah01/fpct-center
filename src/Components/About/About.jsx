@@ -112,7 +112,7 @@ const About = () => {
             <div className="about">
                 <div className="about-left">
                     <h3>About FPCT Center</h3>
-                    <h2>Nurturing tomorrow's leaders today</h2>
+                    <h2>Nurturing tomorrow &apos;s leaders today</h2>
                     <p>
                         We are providing all Spiritual and Social services with quality,
                         integrity, leadership based on the principles of the Bible. We obey and follow
@@ -153,7 +153,7 @@ const About = () => {
                     <p>
                         To see that everyone is loved and blessed by God in
                         a way that makes them feel accepted, appreciated and has
-                        the feeling of being part of God's child
+                        the feeling of being part of God &apos;s child
                     </p>
                 </div>
                 <div className="mission">
@@ -233,14 +233,14 @@ const About = () => {
                                 <p className='review-about'>
                                 I had a great experience at FPCT Center.
                                  The spiritual and social services exceeded my expectations, 
-                                 and the staff's dedication to their values was apparent. 
+                                 and the staff&apos;s dedication to their values was apparent. 
                                  The atmosphere was inviting, making my visit both comforting and valuable. 
                                  I strongly recommend FPCT Center for those in need of sincere spiritual and community support.
                                 </p>
                             </div>
                         </li>
                         <li>
-                            <div className="slides">
+                            <div className="slidess">
                                 <div className="user-infos">
                                     <img src={mchungaji4} alt="Mch. Stevie Mulenga" />
                                     <div>
@@ -251,7 +251,7 @@ const About = () => {
                                 <p className='review-about'>
                                 My visit to FPCT Center was incredibly rewarding. 
                                 The quality of spiritual and social services was exceptional, 
-                                and the staff's commitment was evident. The welcoming and supportive environment made a real difference. 
+                                and the staff &apos;s commitment was evident. The welcoming and supportive environment made a real difference. 
                                 I highly recommend FPCT Center for anyone looking for genuine care and guidance.
                                 </p>
                             </div>

@@ -1,249 +1,245 @@
-/* Home.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-/* General Container Styles */
-.page {
- align-items: center;
+:root {
+  --heights: 50vh;
+  --widths: 100%;
+}
 
-    margin-top: 2px;
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-    background-color: #060000; /* Light background color for visibility */
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slideds {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 150%;
+  position: relative;
+  object-fit: cover;
+
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.slide-title,
+.slide-text {
+  width: 100%;
+  height: 100%;
+  color: rgb(209, 161, 57);
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 20;
+}
+
+.slide-text {
+  top: 65%;
+  font-size: 2rem;
+}
+
+.prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,.sliderss-container:hover .next {
+  color: rgb(143, 127, 127)
+}
+
+.sliderss-container:hover .prev:hover,
+.sliderss-container:hover .next:hover {
+  background-color: rgba(116, 106, 106, 0.541);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 80%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  z-index: 200;
+  color: white;
+
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  /* background-color: transparent; */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.sliderss-container:hover .dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.active-dot {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sliderss-container:hover .dot{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider-container:hover .active-dot{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.play-pause {
+  color: black;
+}
+
+/* Media queries for smaller screen responsiveness */
+@media (max-width: 1200px) {
+  :root {
+    --heights: 40vh;
+    
   }
-  
-  
-  /* Slideshow Container */
-  .slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  /* Individual Slides */
-  .mySlides {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none; /* Hide all slides by default */
-    top: 0;
-    /* left: 0; */
-  }
-  
-  /* Slide Images */
+
   .slide-image {
     width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain /* Ensure image covers the container while maintaining aspect ratio */
-  }
+    height: 190%;
+    position: relative;
+    object-fit: cover;
   
-  /* Overlay */
+    
+  }
+
+  .all-dots {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 70%;
+    justify-content: center;
+    z-index: 200;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.466); /* Semi-transparent overlay */
-    z-index: 1; /* Ensure overlay is on top */
-    pointer-events: none; /* Allow interaction with content below the overlay */
+    height: 190%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+  .slide-title,
+  .slide-text {
+  width: 90%;
+  height: 100%;
+  color: rgb(209, 161, 57);
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 20;
+}
+
+.slide-text {
+  top: 80%;
+  font-size: 1.5rem;
+}
+.slide-title {
+  font-size: 2rem;
+}
+
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --heights: 35vh;
   }
   
-  /* Page Text Styles */
-  .page-text {
+
+  .prev, .next {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  .dot {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .all-dots {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 30%;
-    left: 20%;
-    color: white;
-    text-align: center;
-    align-items: center;
+    display: flex;
+    top: 80%;
     justify-content: center;
-    box-sizing: border-box;
-    max-width: 80%;
-    height: 100%;
-    z-index: 2; /* Ensure text is above the overlay */
+    z-index: 200;
   }
-  
-  /* Headline and Paragraph Styles */
-  .page-text h1 {
-    font-size: 4vw; /* Responsive font size */
-    margin: 0;
-    line-height: 1.2;
-  }
-  
-  .page-text p {
-    font-size: 2em;
-    line-height: 1.2;
-
-  }
-  
-  /* Button Styles */
-  .btn-explore {
-    background-color:  hsl(41, 95%, 22%);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px; /* Responsive font size */
-    cursor: pointer;
-    margin-top: 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  
-  .btn-explore:hover {
-    background-color:  hsl(41, 77%, 19%);
-  }
-  
-  /* Fade Animation */
-  .fade {
-    /* animation: fade 1.5s ease-in-out; */
-  }
-  
-  @keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  /* Responsive Styles */
-  
-  /* Large screens (Desktops) */
-  @media (min-width: 1200px) {
-    .page-text h1 {
-      font-family: 'Nunito', sans-serif; 
-      justify-content: center;
-      align-items: center;
-      font-size: 3vw;
-      font-weight: 700; 
-      color: #ffffff; 
-      margin: 20px 0 10px 10px; 
-      text-align: center; 
-      line-height: 1.2;
-    }
-  
-
-.page-text p {
-  font-family: 'Nunito', sans-serif; 
-  font-size: 18px; 
-  line-height: 1.7; 
-  color: #ffffff; 
-  margin-bottom: 20px; 
-  text-align: justify; 
-  max-width: 800px; 
-  margin: 0 auto;
 }
 
-/* Optional: Add some padding around the text */
-.page-text {
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+@media (max-width: 480px) {
+  :root {
+    --heights: 30vh;
+  }
 
-  
-    .btn-explore {
-      font-size:16px; /* Responsive button font size */
-    }
+  .prev, .next {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
-  
-  /* Medium screens (Tablets) */
-  @media (max-width: 1199px) and (min-width: 768px) {
-    .page-text h1 {
-      font-size: 4vw; /* Adjusted font size for medium screens */
-    }
-    
-    .btn-explore {
-      margin-top: 10px;
-      font-size: 2vw; /* Adjusted button font size for very small screens */
-    }
-    .page-text {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      color: white;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      max-width: 80%;
-      height: 100%;
-      z-index: 2; /* Ensure text is above the overlay */
-    }
-    .page-text p {
-      font-size: 2vw; /* Adjusted font size for medium screens */
-    }
-  
-    .btn-explore {
-      font-size: 20px; /* Adjusted button font size for medium screens */
-    }
+
+  .dot {
+    height: 1rem;
+    width: 1rem;
   }
-  
-  /* Small screens (Phones) */
-  @media (max-width: 767px) {
-    .page-text h1 {
-      font-size:4vw; /* Adjusted font size for small screens */
-    }
-    
-    .btn-explore {
-      margin-top: 10px;
-      font-size: 2vw; /* Adjusted button font size for very small screens */
-    }
-    .page-text {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      color: white;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      max-width: 80%;
-      height: 100%;
-      z-index: 2; /* Ensure text is above the overlay */
-    }
-    .page-text p {
-      font-size: 2vw; /* Adjusted font size for small screens */
-    }
-  
-    .btn-explore {
-      font-size: 2vw; /* Adjusted button font size for small screens */
-    }
-  }
-  
-  /* Extra small screens (Very small phones) */
-  @media (max-width: 480px) {
-    
-    .page-text h1 {
-      font-size: 4vw; /* Adjusted font size for very small screens */
-    }
-  
-    .page-text p {
-      font-size: 2vw; /* Adjusted font size for very small screens */
-    }
-  
-    .btn-explore {
-      margin-top: 10px;
-      font-size: 2vw; /* Adjusted button font size for very small screens */
-    }
-    .page-text {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      color: white;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      max-width: 80%;
-      height: 100%;
-      z-index: 2; /* Ensure text is above the overlay */
-    }
-    
-  }
-  
+}

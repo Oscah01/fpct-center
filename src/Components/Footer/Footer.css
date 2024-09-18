@@ -95,7 +95,7 @@ a:hover{
 .footer p {
     margin: 0;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .footer .footer-right {
@@ -147,7 +147,10 @@ a:hover{
     display: block;
 }
 .footer-contact h1{
-    margin-top: 10px;
+   display: none;
+}
+.footer-contact h2{
+    font-size: 16px;
 }
 
 /* Styles for screens wider than 768px */
@@ -189,24 +192,39 @@ a:hover{
         padding: 10px 5%;
         text-align: center;
     }
+    .kanisa,.shule, .hospitali {
+        font-size: 14px;
+        font-style: none;
+    }
+    .footer-contact h1{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .footer-contact-contact h1{
+         font-size: 18px;
+    }
+    .footer-contact-contact {
+        font-size: 12px;
+    }
+    .social-links{
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        justify-content: center;
+    }
     .logo-footer img{
-        display: block;
-        width: 150px; 
-        height: auto;
-        margin-left: 70px; 
-       
+        display: none;
+        
+        
     }
 
-    .logo-footer{
-        margin-left: 20px;
-    }
+    
     .footer-contact {
         align-items: center;
         justify-content: center;
     }
-   .kanisa{
-    color: white;
-   }
+   
     .bofore-footer h1 {
         font-size: 20px;
     }

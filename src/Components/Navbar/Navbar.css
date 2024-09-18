@@ -139,6 +139,12 @@ nav ul li:hover .dropdown {
 
   }
 
+  .logo {
+    width: 110px;
+    margin-top:-10px;
+    margin-right: 80%;
+    position: relative;
+}
   /* Hamburger menu styles */
   .hamburger {
       display: flex;
