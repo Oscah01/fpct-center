@@ -1,5 +1,5 @@
 import './Conferences.css';
-import gallery5 from '../../assets/center33.JPG';
+import gallery5 from '../../assets/center15.JPG';
 import center1 from '../../assets/center1.JPG';
 
 const Conferences = () => {
