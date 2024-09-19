@@ -4,15 +4,72 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 400px) {
+    .news-container {
+        align-items: flex-start;
+        justify-content: left;
+        padding-left: 10px;
+        width: auto;
+    }
+    .posts-main-div {
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+        margin-top: 4vh;
+        align-items: center;
+        width: auto;
+    }
+    .posts-article img{
+        width: 19vw;
+        height: 12vh;
+        object-fit: cover;
+    }
 
+    .post-timing {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2vh;
+        font-size: 10px;
+    }
+    
+    .post-title {
+         font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 2vh;
+        width: auto;
+    }
+    
+    
+    .post-title:hover {
+        color: blue;
+    }
+    
+    .calendar {
+        width: 3vw;
+        height: 3vh;
+    }
+    
+    .date {
+        font-family: serif;
+        font-size: 12px;
+        margin-left: 4px;
+        margin-top: 3px;
+    }
+    
+    .document-link {
+        font-size: 10px;
+        color: black;
+
+    }
+} 
 @media (max-width: 768px) {
     .news-container {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10vh;
-        width: 100%;
-        align-items: center;
-        justify-items: center;
+        width: auto;
+        padding-left: 100px;
     }
 
     .news-hr {
@@ -36,35 +93,37 @@
         border: 1px solid purple;
     }
     
+    .news-container {
+        align-items: flex-start;
+        justify-content: left;
+        padding-left: 40px;
+    }
     .posts-main-div {
         display: flex;
         flex-direction: column;
         gap: 8vh;
-        margin-top: 5vh;
-        margin-right: 100px;
+        margin-top: 4vh;
+        width: auto;
     }
-    .posts-article {
-        display: flex;
-        gap: 1vw;
-    }
-    
-    .post-img {
-        width: 12vw;
-        height: 15vh;
+    .posts-article img{
+        width: 19vw;
+        height: 12vh;
         object-fit: cover;
     }
-    
+
     .post-timing {
         display: flex;
         align-items: center;
         justify-items: center;
         margin-top: 2vh;
+        font-size: 10px;
     }
     
     .post-title {
         text-transform: uppercase;
         margin-bottom: 2vh;
     }
+    
     
     .post-title:hover {
         color: blue;
@@ -145,6 +204,7 @@
     .docs-article {
         display: flex;
         gap: 1vw;
+        
     }
     
     .docsPdf {
@@ -153,6 +213,7 @@
     }
     
     .document-link {
+        font-size: 10px;
         color: black;
     }
     
