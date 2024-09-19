@@ -44,11 +44,14 @@ const Navbar = () => {
       </div>
       <ul className={`${menuOpen ? 'show' : ''}`}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        
-        <li 
+        <li><Link to="/about">About Us</Link></li>  
+      
+
+      
+        <li  
           onMouseEnter={() => toggleDropdown('services')} 
-          onMouseLeave={() => toggleDropdown('services')}
+          onMouseLeave={() => toggleDropdown('services')} 
+          
         >
           Services
           <FontAwesomeIcon 
@@ -60,9 +63,7 @@ const Navbar = () => {
             <li><Link to="/spirituals">Spirituals Services</Link></li>
             <li><Link to="/conferences">Conferences</Link></li>
             <li><Link to="/seminars">Seminars</Link></li>
-            <li><Link to="/workshops">Workshops</Link></li>
-            <li><Link to="/parking">Parking</Link></li>
-            
+            <li><Link to="/workshops">Workshops</Link></li>            
             </ul>
           )}
         </li>
@@ -71,6 +72,7 @@ const Navbar = () => {
           onMouseLeave={() => toggleDropdown('resource')}
         >
           Resources
+
           <FontAwesomeIcon 
             icon={faChevronDown} 
             className={`chevron ${isDropdownOpen.resource ? 'rotate' : ''}`} 
@@ -83,7 +85,6 @@ const Navbar = () => {
             </ul>
           )}
         </li>
-        <li><Link to="/gallery">Gallery</Link></li>
         <li><Link to="/Management">Administration</Link></li>
         <li><Link to="/newsCentre">News & Updates</Link></li>
         <li><Link to="/contacts">Contact us</Link></li>

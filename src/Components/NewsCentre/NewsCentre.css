@@ -14,10 +14,17 @@
     .posts-main-div {
         display: flex;
         flex-direction: column;
-        gap: 8vh;
-        margin-top: 4vh;
+        margin-top: 1vh;
         align-items: center;
         width: auto;
+    }
+    .posts-article{
+       width: 300px;
+    }
+
+    .posts-article{
+        padding: 1px;
+        margin-top: -10px;
     }
     .posts-article img{
         width: 19vw;
@@ -29,12 +36,12 @@
         display: flex;
         align-items: center;
         justify-items: center;
-        margin-top: 2vh;
+        margin-top: 1vh;
         font-size: 10px;
     }
     
     .post-title {
-         font-size: 10px;
+         font-size: 12px;
         text-transform: uppercase;
         margin-bottom: 2vh;
         width: auto;
@@ -62,6 +69,7 @@
         color: black;
 
     }
+   
 } 
 @media (max-width: 768px) {
     .news-container {
@@ -123,7 +131,6 @@
         text-transform: uppercase;
         margin-bottom: 2vh;
     }
-    
     
     .post-title:hover {
         color: blue;

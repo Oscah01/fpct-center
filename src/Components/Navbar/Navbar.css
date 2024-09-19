@@ -68,6 +68,10 @@ nav ul li:hover{
   background-color: #000000;
 }
 
+
+.list-services{
+  display: block;
+}
 /* Show dropdown on hover */
 nav ul li:hover .dropdown {
   display: block;
@@ -113,7 +117,7 @@ nav ul li:hover .dropdown {
       right: 0;
       bottom: 0;
       background: #212EA0;
-      z-index: 100; /* Ensure it's above other elements */
+      z-index: 500; /* Ensure it's above other elements */
       width: 80%;
       padding-top: 70px;
       transform: translateX(100%); /* Hide off-screen initially */
@@ -128,14 +132,43 @@ nav ul li:hover .dropdown {
 
   nav ul li {
       margin: 15px 10px;
-      color: white; /* Ensure text color is readable */
+      color: rgb(5, 5, 5); /* Ensure text color is readable */
   }
 
   .dropdown {
-      display: none; /* Hide dropdown on mobile */
+    position: absolute;
+    color: #b57d0e;
+    background-color: #b57d0e ;
+    margin-right: 200px;
+    color: rgb(204, 158, 8);
+    z-index: 1000;
+    height: 150px;
   }
+    .dropdown li {
+    padding: 100px 160px 120px 100px; 
+    margin: 0; /* Remove margins between list items */
+    width: 100%; /* Ensure list items take up full width */
+  }
+
+  .dropdown li:hover {
+    background-color: #000000;
+  }
+  
+  /* Make sure the dropdown is visible on mobile */
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+
+  /* Ensure other mobile styles are not affected */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+ 
+
   .chevron{
-      display: none; /* Hide chevron on mobile */
+      display: block; /* Hide chevron on mobile */
 
   }
 
@@ -160,6 +193,27 @@ nav ul li:hover .dropdown {
       font-size: 24px;
       color: rgb(224, 170, 8);
   }
+
+  .dropdown li {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  .dropdown li:hover {
+    background-color: #000000;
+  }
+  
+  /* Show dropdown on hover */
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Chevron icon styles */
+  .chevron {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
 }
 
 /* Styles for close icon */
