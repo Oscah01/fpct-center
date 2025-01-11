@@ -207,6 +207,10 @@ body, html {
     margin-bottom: 20px;
     font-size: 15px;
 }
+.testimonialsspan{
+    margin-left: 80rem;
+    cursor: pointer;
+}
 
 .user-infos h3{
     color: #b57d0e;

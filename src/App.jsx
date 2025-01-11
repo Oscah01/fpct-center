@@ -16,6 +16,9 @@ import Biblestudy from './Components/Biblestudy/Biblestudy';
 import Sermons from './Components/Sermons/Sermons';
 import Parking from './Components/Parking/Parking';
 import "preline/preline";
+import Slided from './Components/About/Slided';
+import Visit from './Components/NewsCentre/Visit';
+
 
 
 
@@ -31,6 +34,9 @@ const App = () => {
               <Page />
               <Tittle subTitle='News Centre' title='Our Recent News'/>
               <NewsCentre/>
+             <Visit/>
+
+             <Slided subTitle="News Centre" title="V" />
               {/* <Tittle subTitle='Contact us' title='Get in Touch' />
               <Contacts /> */}
             </div>

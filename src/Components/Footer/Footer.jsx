@@ -5,18 +5,7 @@ import logo from '../../assets/logos.png'
 const Footer = () => {
   return (
     <>
-    <div className="container-before-footer">
-  <div className="bofore-footer">
-    <h1>Looking for Spiritual Guidance? We Can Help.</h1>
-    <p>Our dedicated team is here to offer prayers, support, and encouragement.<br/> 
-    Whether you're facing challenges or seeking peace, we're just a message away.<br/> 
-    Reach out to us, and let's walk this spiritual journey together.</p>
-  </div>
-  <div className="right-before-footer">
-    <button>Request Prayer</button>
-  </div>
-</div>
-
+     
     <div className='footer'> 
            <ul className='footer-contact'>
           <h1>FREE PENTECOST TANZANIA CENTER</h1>

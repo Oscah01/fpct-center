@@ -1,7 +1,6 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 import './Gallery.css';
 
-import gallery1 from '../../assets/center1.JPG';
 import gallery2 from '../../assets/center2.JPG';
 import gallery3 from '../../assets/center3.JPG';
 import gallery8 from '../../assets/center8.JPG';
@@ -28,34 +27,57 @@ import gallery57 from '../../assets/center57.JPG';
 import gallery59 from '../../assets/center59.JPG';
 
 const images = [
-  gallery1, gallery2, gallery3, gallery8, gallery12, gallery14, gallery15,
+  gallery2, gallery3, gallery8, gallery12, gallery14, gallery15,
   gallery19, gallery22, gallery24, gallery28, gallery31, gallery32,
   gallery37, gallery38, gallery40, gallery41, gallery42, gallery46,
-  gallery48, gallery49, gallery51,
-  gallery54, gallery57, gallery59
+  gallery48, gallery49, gallery51, gallery54, gallery57, gallery59
 ];
 
 const Gallery = () => {
-  const galleryRef = useRef(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+
+  const openModal = (image) => {
+    setCurrentImage(image);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setCurrentImage(null);
+  };
 
   return (
     <>
-    <div className="gallery-dashboard">
-      <h1>Gallery</h1>
-      <button>View all</button>
-    </div>
-    <div className="gallery-container">
-      
-      <div className="gallery-scroll-wrapper">
-        <div className="gallery-grid" ref={galleryRef}>
-          {images.map((image, index) => (
-            <div key={index} className="gallery-item">
-              <img src={image} alt={`Gallery ${index + 1}`} />
-            </div>
-          ))}
+      <div className="gallery-dashboard">
+        <h1>Gallery</h1>
+        <button>View all</button>
+      </div>
+      <div className="gallery-container">
+        <div className="gallery-scroll-wrapper">
+          <div className="gallery-grid">
+            {images.map((image, index) => (
+              <div key={index} className="gallery-item">
+                <img
+                  src={image}
+                  alt={`Gallery ${index + 1}`}
+                  onClick={() => openModal(image)} // Open modal on image click
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Modal */}
+      {modalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content">
+            <img src={currentImage} alt="Full-size" />
+            <span className="close" onClick={closeModal}>&times;</span>
+          </div>
+        </div>
+      )}
     </>
   );
 };
