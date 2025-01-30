@@ -8,13 +8,13 @@ const Footer = () => {
      
     <div className='footer'> 
            <ul className='footer-contact'>
-          <h1>FREE PENTECOST TANZANIA CENTER</h1>
+          <h3>FREE PENTECOST TANZANIA CENTER</h3>
             
             <li className='logo-footer'><img src={logo}/> </li> <br/>
             
            </ul>
            <ul className='footer-contact-contact'>
-          <h1>CONTACT US</h1>
+          <h3>CONTACT US</h3>
 
             <p>P.O.BOX 9484 </p>
             <p> Dar es salaam  </p>
@@ -35,20 +35,18 @@ const Footer = () => {
               </a>
             </div>
            </ul>
-           <ul className='footer-contact'>
-          <h2>USEFUL LINKS</h2>
-          <a className='kanisa' href="#">
-                <i>Kanisa</i> <br/>
-              </a>
-          <a className='shule' href="#">
-                <i>shule ya BIBLIA</i><br/>
-              </a>
-          <a className='hospitali' href="#">
-                <i>Hospitali ya Kanisa</i>
-              </a>
-            
-            
-           </ul>
+          <ul className='footer-contact-links'>
+  <h3>USEFUL LINKS</h3>
+  <a href="#"><span className="arrow">></span> Home</a>
+  <a href="#"><span className="arrow">></span> About Us</a>
+  <a href="#"><span className="arrow">></span> Church Services</a>
+  <a href="#"><span className="arrow">></span> Bible School</a>
+  <a href="#"><span className="arrow">></span> Health Services</a>
+  <a href="#"><span className="arrow">></span> Events & Conferences</a>
+  <a href="#"><span className="arrow">></span> Give & Support</a>
+  <a href="#"><span className="arrow">></span> Contact Us</a>
+</ul>
+
           
      
       
@@ -56,7 +54,7 @@ const Footer = () => {
     <div className='rights'>
 
     <p>This website is developed and maintained by <strong>FPCT CENTER DAR ES SALAAM</strong> </p>
-    <p >&copy; 2024 Fpct. All rights reserved</p>
+    <p >&copy; 2025 Fpct. All rights reserved</p>
     </div>
     </>
   )

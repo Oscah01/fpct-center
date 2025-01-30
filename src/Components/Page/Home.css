@@ -13,7 +13,12 @@
   width: var(--widths);
   position: relative;
   margin: auto;
-  overflow: hidden;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  
+}
+
+.sliderss-container{
+  width: 100%;
 }
 
 .active {
@@ -32,7 +37,7 @@
 
 .slide-image {
   width: 100%;
-  height: 150%;
+  height: 650px;
   position: relative;
   object-fit: cover;
 
@@ -44,33 +49,35 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
+  height: 650px;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 1;
 }
 
 .slide-title,
 .slide-text {
   width: 100%;
   height: 100%;
-  color: rgb(209, 161, 57);
-  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
   position: absolute;
-  text-align: center;
   top: 40%;
-  z-index: 20;
+  z-index: 1;
+  margin-left: 15%;
+
 }
 
 .slide-text {
-  top: 65%;
+  line-height: 1.1; 
+  top: 55%;
   font-size: 2rem;
+  font-size: 70px;
 }
 
 .prev,
 .next {
   color: transparent;
   cursor: pointer;
-  z-index: 100;
+  z-index: 10;
   position: absolute;
   top: 50%;
   width: auto;
@@ -98,18 +105,16 @@
 
 .all-dots {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 100px;
   display: flex;
-  top: 80%;
   justify-content: center;
   z-index: 200;
+  margin-top: -30px;
 }
 
 .dot {
   z-index: 200;
   color: white;
-
   cursor: pointer;
   height: 1.5rem;
   width: 1.5rem;
@@ -159,7 +164,6 @@
   .all-dots {
     width: 100%;
     height: 100%;
-    position: absolute;
     display: flex;
     top: 70%;
     justify-content: center;
@@ -193,6 +197,7 @@
 }
 .slide-title {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
   .prev, .next {

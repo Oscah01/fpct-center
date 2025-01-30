@@ -1,0 +1,38 @@
+.spirituals {
+  text-align: center;
+}
+
+.spirituals h1 {
+  text-align: center;
+  background-color: #081F54;
+  color: #b57d0e;
+  padding: 40px 10px;
+  width: 100%; /* Ensure full width */
+}
+
+.spiritual-para1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.custom-bullet::before {
+  content: '•';
+  color: black;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.para2 {
+  list-style: none;
+  padding-left: 0;  /* Remove default padding */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left; /* Align text to the left */
+  margin-left: 20%; /* Align the text with the paragraph */
+}
+
+.para2 li {
+  margin-bottom: 10px; /* Adjust spacing between list items */
+}

@@ -1,5 +1,3 @@
-// src/components/SliderContent.jsx
-// import React from "react";
 import PropTypes from "prop-types"; // Import PropTypes
 
 function SliderContent({ activeIndex, sliderImage }) {
@@ -13,7 +11,7 @@ function SliderContent({ activeIndex, sliderImage }) {
           <img className="slide-image" src={slide.urls} alt="" />
           <div className="overlay"></div>
           <h2 className="slide-title">{slide.title}</h2>
-          <h3 className="slide-text">{slide.description}</h3>
+          <h3 className="slide-text" dangerouslySetInnerHTML={{ __html: slide.description }}></h3>
         </div>
       ))}
     </section>

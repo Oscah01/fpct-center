@@ -1,516 +1,215 @@
-
-body {
-    font-family: 'Open Sans', sans-serif; 
-    color: #676767; 
-}
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-.about, .missions, .vission, .mission, .faith, .foundations, .carousel, .carousel-container, .map, .fpct-location, .contacts, .map-abouts, .user-infos, .review-about, .testimonials h2 {
-    font-family: 'Open Sans', sans-serif; /* Ensure font consistency */
-}
-
-
-.about h3, .about h2, .about p, .map h2, .center-photos h2, .user-infos h3 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.about {
-    color: #676767;
-    margin-top: 5%;
-    margin-left: 100px;
-    margin-right: 100px;
+/* Tailwind classes for tabs */
+.tabs {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Open Sans', sans-serif; 
-}
-
-.about-left {
-    flex-basis: 40%;
-    position: relative;
-}
-
-.about-right {
-    flex-basis: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-img {
-    height: 60vh;
-    width: 80vh;
-    border-radius: 10px;
-}
-
-.about h3 {
-    font-weight: 600;
-    font-size: 16px;
-    color: #676767;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.about h2 {
-    font-size: 35px;
-    color: #676767;
-    margin: 10px 0;
-    max-width: 400px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.about p {
-    color: #676767;
-    margin-bottom: 15px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.missions {
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.vission {
-    color: #676767;
-    flex-basis: 40%;
-    position: relative;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.mission {
-    color: #676767;
-    flex-basis: 45%;
-    margin-left: 20%;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.faith {
-    color: #676767;
-    margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.foundations {
-    color: #676767;
-    text-align: center;
-    margin-top: 100px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.center-photos h2 {
-    color: #676767;
-    margin-top: 60px;
-    text-align: center;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.carousel-container {
-    display: flex;
-    overflow-x: hidden;
-    width: 80%;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.carousel img {
-    height: 180px;
-    width: auto;
-    margin: 0 25px;
-}
-
-.carousel img:hover {
-    transform: scale(1.05);
-}
-
-.map h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-#google-map {
-    margin-top: 10rem;
-    height: 95vh;
-    width: 60%;
-}
-
-.map {
-    color: #676767;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.fpct-location {
-    color: #676767;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.contacts {
-    margin-top: 2000px;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.Contacts ul li {
-    color: #676767;
-    list-style: none;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-.map-abouts {
-    padding-right: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif; /* Apply imported font */
-}
-
-#map-about {
-    width: 50%;
-}
-
-.slides img {
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 10px;
-    border: 4px solid #b57d0e;
-    transition: 0.5s;
-
-}
-.user-infos{
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-.testimonialsspan{
-    margin-left: 80rem;
+    gap: 2rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
     cursor: pointer;
-}
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    text-decoration: underline;
+  }
+  
+  .tab-button.active {
+    border-bottom: 2px solid #bd940c;
+    color: #bd940c;
+  }
+  
+  .tab-content {
+    margin-top: 2rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    background-color: #081F54;
+    color: white;
+    padding: 40px 10px;
+    margin-bottom: 50px;
+    width: 100%; 
+  }
+  
+  .about-header h1{
+ color: #bd940c;
+  }
 
-.user-infos h3{
-    color: #b57d0e;
-}
-.testimonials h2{
-text-align: center;
+  .vission{
+    margin-top: 20px;
+  }
+  .mission{
+    margin-top: 20px;
 
+  }
 
-}
-
-.review-about{
-    width: 80%;
-}
-
-.next-arrows, .back-arrows {
+  .containers{
+    margin-left: 150px;
+  }
+  .core-values {
+    padding-left: 20px; /* Indentation for a clean look */
+  }
+  
+  .dots {
+    position: relative;
+    padding-left: 20px; /* Space for the dot */
+    margin-bottom: 8px; /* Adds space between each line */
+  }
+  
+  .dots::before {
+    content: '•'; /* Unicode character for a dot */
     position: absolute;
-    top: 50%;
-    right: 1%;
-    transform: translateY(-50);
-    padding: 15px;
-    width: 50px;
-    border-radius: 50%;
-    color:#b57d0e; ;
-    /* background-color: #b57d0e; */
-    }
-    
-    .back-arrows{
-        right: auto;
-        left: 1%;
-    }
+    left: 0; /* Aligns the dot to the left of the text */
+    color: black; /* Dot color */
+    font-size: 16px; /* Adjust size of the dot */
+  }
+  
+  .center-about{
+    width: 50%;
+    margin-bottom: 100px;
+  }
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .left {
+    margin-right: 20px;
+  }
+  
+  .right {
+    margin-left: 20px;
+  }
+  
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .review {
+    text-align: center;
+    width: 45%; /* Adjust the width of each review */
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 110px;
+    border-radius: 40%;
+    object-fit: cover;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .font-semibold {
+    font-weight: bold;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  /* Review Form Styles */
+.review-form {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+  }
+  
+  .input-field {
+    width: 30%; /* Full width for each input field */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #babec4;
+    background-color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4a5568;
+    display: block; /* Ensure each input takes up its own line */
+  }
+  
+  input, textarea {
+    width: 100%; /* Ensure inputs and textarea take full width */
+  }
+  
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #63b3ed;
+  }
+  
+  .submit-review-btn {
+    margin-top: 10px;
+    background-color: #bd940c;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit-review-btn:hover {
+    background-color: #bd940c;
+  }
+  
+  .add-review-btn {
+    font-size: 16px;
+    margin-top: 50px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    margin-left: 200px;
 
-    .testimonials h2{
-        margin-top: 80px;
-        text-align: center;
-    }
-    .gallery-containers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-      }
-      
-      .gallery-wrappers {
-        display: flex;
-        overflow-x: hidden;
-        width: 80%;
-        white-space: nowrap;
-      }
-      
-      .gallerys {
-        display: flex;
-        width: max-content;
-      }
-      
-      .gallery-items {
-        flex: 0 0 auto; /* Prevent items from shrinking or growing */
-        width: 200px; /* Adjust as necessary */
-        height: 200px; /* Adjust as necessary */
-        margin-right: 10px; /* Space between images */
-      }
-      
-      .gallery-images {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      .gallery-controls {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        margin-top: 20px;
-      }
-      
-      .btn {
-        padding: 10px 20px;
-        background-color: #f39c12;
-        color: white;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      
-      .btn:hover {
-        background-color: #e67e22;
-      }
-      .testimonialss {
-        width: 300px;
-       position: relative;
-       }
-       
-
-      @media (max-width: 767px) {
-        .about, .missions, .faith, .foundations, .center-photos {
-            flex-direction: column;
-            margin: 10px;
-        }
-        
-        .about-left, .about-right {
-            flex-basis: 100%;
-            margin-bottom: 20px;
-        }
-    
-        .about-img {
-            width: 100%;
-            height: auto;
-        }
-    
-        .missions {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .mission, .vission, .faith {
-            flex-basis: 100%;
-            margin: 0;
-            text-align: center;
-        }
-    
-        .carousel-container {
-            width: 100%;
-        }
-    
-        .gallery-containers {
-            width: 100%;
-            padding: 10px;
-        }
-    
-        .gallery-wrappers {
-            width: 100%;
-        }
-    
-        .gallery-controls {
-            width: 100%;
-            justify-content: center;
-        }
-            .user-infos{
-                text-align:left;
-               }
-        
-    
-        .next-arrows, .back-arrows {
-            width: 40px;
-            height: 40px;
-        }
-    
-        .testimonials h2 {
-            font-size: 24px;
-        }
-     
-        .user-infos{
-            width: 300px;
-            display: block;
-            align-items:start;
-            margin-top: 8px;
-            font-size: 15px;
-        }
-        
-    
-        /* Style adjustments for slider to center content */
-        .slider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            height: auto; /* Adjust based on the height of your single visible testimonial */
-        }
-    
-        .slider ul {
-            flex-direction: row; /* Display reviews side by side */
-            justify-content: space-between; /* Ensure space between the two reviews */
-            align-items: start; /* Align items to the top */
-        }
-    
-        .slider li {
-            display: block; /* Ensure reviews are visible */
-            width: 48%; /* Adjust width to fit two reviews side by side with some space */
-            text-align: start; /* Align text to the start */
-            margin-right: 2%; /* Add margin between the two reviews */
-        }
-        .slider li:first-child {
-            display: block; /* Show only the first testimonial */
-        }
-    
-        /* Optional: Hide navigation arrows on mobile */
-        .next-arrows {
-            margin-left: 10px;
-        }
-    }
-    
-      /* Tablets and smaller desktops */
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .about {
-          flex-direction: column;
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-      
-        .about-left, .about-right {
-          flex-basis: 100%;
-          margin-bottom: 20px;
-        }
-      
-        .about-img {
-          width: 100%;
-          height: auto;
-        }
-      
-        .missions {
-          flex-direction: column;
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-      
-        .mission, .vission, .faith  {
-          flex-basis: 100%;
-          margin: 0;
-          text-align: center;
-        }
-      
-        .carousel-container {
-          width: 90%;
-        }
-      
-        .gallery-controls {
-          width: 80%;
-        }
-        .user-infos{
-            width: 300px;
-            display: block;
-            align-items:start;
-            margin-top: 8px;
-            font-size: 15px;
-        }
-        .slider {
-            margin-left: 10px;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden     ;
-        }
-    
-        /* Style adjustments for slider to center content */
-        .slider {
-            margin-left: 20px;
-
-            display: flex;
-            justify-content: start;
-            align-items: start;
-            position: relative;
-            overflow: hidden;
-            height: auto; /* Adjust based on the height of your single visible testimonial */
-        }
-    
-        .slider ul {
-            flex-direction: row; /* Display reviews side by side */
-            justify-content: space-between; /* Ensure space between the two reviews */
-            align-items: start; /* Align items to the top */
-        }
-    
-        .slider li {
-            display: block; /* Ensure reviews are visible */
-            width: 48%; /* Adjust width to fit two reviews side by side with some space */
-            text-align: start; /* Align text to the start */
-        }
-      }
-      
-      /* Large desktops */
-      @media (min-width: 1024px) {
-        .about {
-            
-          flex-direction: row;
-          margin-left: 100px;
-          margin-right: 100px;
-        }
-        .slider {
-            margin-left: 10px;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden     ;
-        }
-        .missions {
-          flex-direction: row;
-          margin-left: 100px;
-          margin-right: 100px;
-        }
-      
-        .mission, .vission {
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-      
-        .carousel-container {
-          width: 80%;
-        }
-      
-        .gallery-controls {
-          width: 50%;
-        }
-      }
-      
+    color:#bd940c ;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .add-review-btn:hover {
+    color: #bd940c;
+  }
+  
+  .add-review-btn .mr-2 {
+    margin-right: 8px;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: #bd940c;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .arrow:hover {
+    color: #63b3ed;
+  }
+  
+  /* Optional: Style the profile image */
+  .profile-pic {
+    width: 100px;
+    height: 120px;
+    border-radius: 40%;
+    object-fit: cover;
+  }
+  

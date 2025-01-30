@@ -1,93 +1,42 @@
-import  { useRef } from 'react'
 import './Management.css'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import mchungaji1 from '../../assets/Mch. Elias Ndaji.png'
+import mchungaji1 from '../../assets/Mch. Stevie Mulenga.png'
 import mchungaji2 from '../../assets/Mch. George Mwita.png'
 import mchungaji3 from '../../assets/Mch. Jackson Muna.png'
-import mchungaji4 from '../../assets/Mch. Stevie Mulenga.png'
+import mchungaji4 from '../../assets/Mch. Elias Ndaji.png'
 
 const Management = () => {
 
-    const slider = useRef();
-    let tx = 0;
-
-    const slideForward = () => {
-        if(tx > -50) {
-            tx -=25
-        }  
-        slider.current.style.transform = `translateX(${tx}%)`  
-
-    }
-    const slideBackward = () => {
-        if(tx < 0) {
-            tx +=25;
-        }  
-        slider.current.style.transform = `translateX(${tx}%)`  
-
-    }
-
   return (
     <div className='testimonials'>
-       <h1>Board  </h1>
+       <div className='fpct-leadership'>
+       <h1>FPCT Top Leadership  </h1>
+       <div className='leadership-slider'>
+       
+             <div className="fpct-askofu">
+                <div className="askofu-info">
+                 <img src={mchungaji1}></img>
+                 <div>
+                <h3>Bishop. Stevie Mulenga</h3>
+                 </div>
+                </div>
+                <p className='askofu-para'>Archbishop Tanzania</p>
+             </div>
+             
+
+            </div>
+            </div>
        <div className='slider'>
-        <ul ref={slider}>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji1}></img>
-                 <div>
-                <h3>Mch. Elias Ndaji</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
+        <ul >
             <li>
              <div className="slide">
                 <div className="user-info">
                  <img src={mchungaji2}></img>
                  <div>
-                <h3>Mch. George Mwita</h3>
-                <span>Tanzania</span>
+                <h3>Pastor. George Mwita</h3>
                  </div>
                 </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji3}></img>
-                 <div>
-                <h3>Mch. Jackson Muna</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
+                <p className='cheo'>Assistant Archbishop</p>
+                <p className='cheo'>Tanzania</p>
              </div>
              
             </li>
@@ -96,69 +45,11 @@ const Management = () => {
                 <div className="user-info">
                  <img src={mchungaji4}></img>
                  <div>
-                <h3>Mch. Stevie Mulenga</h3>
-                <span>Tanzania</span>
+                <h3>Pastor. Elias Ndaji</h3>
                  </div>
                 </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-        </ul>
-      </div>
-        <span className='next-arrow'>
-        <FaArrowLeft onClick={slideForward}/> 
-      </span>
-     <span className='back-arrow'>
-        <FaArrowRight onClick={slideBackward} />
-      </span>
-      <div className='slider'>
-        <h1>Management  </h1>
-        <ul ref={slider}>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji1}></img>
-                 <div>
-                <h3>Mch. Elias Ndaji</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji2}></img>
-                 <div>
-                <h3>Mch. George Mwita</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
+                <p className='cheo'>Leading Pastor </p>
+                <p className='cheo'>Tanzania</p>
              </div>
              
             </li>
@@ -167,234 +58,17 @@ const Management = () => {
                 <div className="user-info">
                  <img src={mchungaji3}></img>
                  <div>
-                <h3>Mch. Jackson Muna</h3>
-                <span>Tanzania</span>
+                <h3>Pastor. Jackson Muna</h3>
                  </div>
                 </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji4}></img>
-                 <div>
-                <h3>Mch. Stevie Mulenga</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
+                <p className='cheo'>Regional Pastor</p>
+                <p className='cheo'>Tanzania</p>
              </div>
              
             </li>
         </ul>
       </div>
-        <span className='next-arrow'>
-        <FaArrowLeft onClick={slideForward}/> 
-      </span>
-     <span className='back-arrow'>
-        <FaArrowRight onClick={slideBackward} />
-      </span>
-      <div className='slider'>
-        <h1>Senior leaders (C.E.O, Manager)
-        </h1>
-        <ul ref={slider}>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji1}></img>
-                 <div>
-                <h3>Mch. Elias Ndaji</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji2}></img>
-                 <div>
-                <h3>Mch. George Mwita</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji3}></img>
-                 <div>
-                <h3>Mch. Jackson Muna</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji4}></img>
-                 <div>
-                <h3>Mch. Stevie Mulenga</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-        </ul>
-      </div>
-        <span className='next-arrow'>
-        <FaArrowLeft onClick={slideForward}/> 
-      </span>
-     <span className='back-arrow'>
-        <FaArrowRight onClick={slideBackward} />
-      </span>
-      
-      <div className='slider'>
-        <h1>Workers
-        </h1>
-        <ul ref={slider}>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji1}></img>
-                 <div>
-                <h3>Mch. Elias Ndaji</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji2}></img>
-                 <div>
-                <h3>Mch. George Mwita</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji3}></img>
-                 <div>
-                <h3>Mch. Jackson Muna</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-            <li>
-             <div className="slide">
-                <div className="user-info">
-                 <img src={mchungaji4}></img>
-                 <div>
-                <h3>Mch. Stevie Mulenga</h3>
-                <span>Tanzania</span>
-                 </div>
-                </div>
-                <p>FpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpct
-                    fpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpcFpctfpctFpctfpctFpctfpct
-                    FpctfpctFpctfpctFpctfpctFpctfpctFpctfp
-                    ctFpctfpctFpctfpctFpctfpct</p>
-             </div>
-             
-            </li>
-        </ul>
-      </div>
-        <span className='next-arrow'>
-        <FaArrowLeft onClick={slideForward}/> 
-      </span>
-     <span className='back-arrow'>
-        <FaArrowRight onClick={slideBackward} />
-      </span>
+
       
     </div>
   )

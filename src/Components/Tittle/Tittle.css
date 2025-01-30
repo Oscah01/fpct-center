@@ -3,12 +3,13 @@
     color: #212EA0;
     font-size: 600;
     text-transform: uppercase;
-    margin: 70px 0 30px;
+    margin: 70px 0 0px;
+    border: solid red;
 }
 
 .title h2{
     font-size: 32px;
     color: #000F38;
-    margin-top: 5px;
+    margin-top: 15px;
     text-transform: none;
 }

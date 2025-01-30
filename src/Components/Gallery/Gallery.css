@@ -149,7 +149,13 @@
   border-color:#21174a ;
   color: white;
   }
-  
+  .gallery-header{
+    text-align: center;
+    background-color: #081F54;
+    color: #b57d0e;
+    padding: 40px 10px;
+    width: 100%; /* Ensure full width */
+  }
   .gallery-dashboard h1{
   margin-left: 50px;
   margin-top: 10px;

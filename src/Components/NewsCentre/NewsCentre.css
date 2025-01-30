@@ -2,8 +2,24 @@
     display: grid;
     padding-left: 100px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
 }
+.news-page{
+    width: 100%;
+    margin-top: 40px;
+}
+.news-page h1{
 
+         align-items: center;
+        justify-content: center;
+         display: flex;
+    }
+.news-page h2{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+}
 @media (max-width: 400px) {
     .news-container {
         align-items: flex-start;
@@ -45,6 +61,7 @@
         text-transform: uppercase;
         margin-bottom: 2vh;
         width: auto;
+
     }
     
     

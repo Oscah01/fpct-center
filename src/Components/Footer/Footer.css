@@ -1,231 +1,90 @@
-
-
+/* Footer Container */
 .footer {
-    margin-top: 10px;
-    padding: 20px 5%;
-    background-color: rgba(105, 67, 7, 0.993);
-    color: #b4d698;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    align-items: start;
+    width: 100%;
+    margin-top: 2px;
+    padding: 40px 80px;
+    background-color: #104ca7f3; /* Dark blue shade */
+    color: white;
 }
 
 .footer ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-.footer-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-info li {
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-}
-
-
-.footer-info li a {
-    color: white;
-    text-decoration: none;
     margin-left: 10px;
-    transition: color 0.3s ease;
 }
 
-.footer-info li a:hover {
-    color: #b57d0e; /* Change color on hover */
-}
-
-.footer p {
-    margin: 0;
-    text-align: center;
-    font-size: 12px;
-}
-
-.footer .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.rights {
-    text-align: center;
-    font-size: 14px;
-    background-color: #3c2002;
-    color: white;
-    height: 10vh;
-    overflow: hidden;
-    padding-top: 1px;
-}
-.social-links{
+/* First Section - Logo */
+.logo-footer img {
+    width: 200px;
+    height: 200px;
+    display: block;
     margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
 }
 
-.footer .footer-right ul {
+/* Second Section - Contact */
+.footer-contact-contact p,
+.footer-contact-contact li {
+    margin: 15px 0;
+}
+
+/* Social Media Links */
+.social-links {
     display: flex;
     gap: 15px;
     margin-top: 10px;
 }
 
-.footer .footer-right ul li a {
+.social-links a {
     color: white;
-    text-decoration: none;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-.footer .footer-right ul li a:hover {
-    color: #b57d0e; /* Change color on hover */
-}
-.logo-footer img{
-    display: block;
-    width: 150px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    padding: 0;
+.social-links a:hover {
+    color: #ffd700; /* Gold color on hover */
 }
 
-.logo img {
-    max-width: 100%;
-    height: 130px;
-    display: block;
+/* Third Section - Useful Links */
+.footer-contact-links {
+    margin-right: 150px;
 }
-.footer-contact h1{
-   display: none;
-}
-.footer-contact h2{
+
+.footer-contact-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Default text color */
     font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Styles for screens wider than 768px */
-@media (min-width: 769px) {
-    .container-before-footer {
-        flex-direction: row;
-        padding: 0 5%;
-    }
-    /* .logo img {
-        max-width: 100px;
-        height: 130px;
-        display: block;
-    } */
-   
-
-    .right-before-footer {
-        margin-right: 5%;
-    }
-
-    .footer {
-        padding: 20px 5%;
-    }
-
-    .footer-info {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer .footer-right {
-        align-items: flex-end;
-    }
+/* Default Arrow Color */
+.footer-contact-links .arrow {
+    display: inline-block;
+    margin-left: px; /* Space between arrow and text */
+    font-weight: bold;
+    font-size: 12px;
+    color: white; /* Arrow is white before hover */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Styles for screens 768px and below */
-@media (max-width: 768px) {
-    .container-before-footer {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 5%;
-        text-align: center;
-    }
-    .kanisa,.shule, .hospitali {
-        font-size: 14px;
-        font-style: none;
-    }
-    .footer-contact h1{
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    .footer-contact-contact h1{
-         font-size: 18px;
-    }
-    .footer-contact-contact {
-        font-size: 12px;
-    }
-    .social-links{
-        margin-top: 10px;
-        display: flex;
-        gap: 10px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    .logo-footer img{
-        display: none;
-        
-        
-    }
-
-    
-    .footer-contact {
-        align-items: center;
-        justify-content: center;
-    }
-   
-    .bofore-footer h1 {
-        font-size: 20px;
-    }
-
-    .bofore-footer p {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-
-    .right-before-footer {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    .right-before-footer button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 10px 5%;
-        text-align: center;
-    }
-
-    .footer-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-info li {
-        margin: 5px 0;
-    }
-
-    .footer .footer-right ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Hover effect on both arrow and text */
+.footer-contact-links a:hover,
+.footer-contact-links a:hover .arrow {
+    color: #ffd700; /* Gold color on hover */
+    transform: translateX(5px); /* Moves both arrow & text forward */
 }
 
-/* Styles for screens 480px and below */
-@media (max-width: 480px) {
-    .bofore-footer h1 {
-        font-size: 18px;
-    }
-
-    .bofore-footer p {
-        font-size: 12px;
-    }
-
-    .right-before-footer button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
+/* Rights Section */
+.rights {
+    text-align: center;
+    padding: 15px 0;
+    background: #121274;
+    color: white;
+    font-size: 14px;
 }

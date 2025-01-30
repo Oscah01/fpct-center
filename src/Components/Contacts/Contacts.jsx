@@ -1,4 +1,3 @@
-import React from 'react';
 import './Contacts.css';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import { FaMapLocation } from 'react-icons/fa6';

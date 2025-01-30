@@ -49,8 +49,9 @@ const Gallery = () => {
 
   return (
     <>
+        <h1 className='gallery-header'>Gallery</h1>
       <div className="gallery-dashboard">
-        <h1>Gallery</h1>
+        <p></p>
         <button>View all</button>
       </div>
       <div className="gallery-container">

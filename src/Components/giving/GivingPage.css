@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root {
+    --heights: 50vh;
+    --widths: 100%;
+  }
+  
+.giving-page {
+    margin: 0; 
+
+}
+
+.giving-header {
+    text-align: center;
+    background-color: #081F54;
+    color: #b57d0e;
+    padding: 30px 10px;
+    width: 100%; /* Ensure full width */
+}
+
+.giving-header h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.giving-header p {
+    font-size: 1.2rem;
+}
+
+/* Donation Options */
+.giving-options {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    position: relative;
+    height: 750px;
+    overflow: hidden;
+    width: 100%; /* Ensure full width */
+    
+    /* Linear Gradient Overlay with Background Image */
+    background: linear-gradient(rgba(15, 63, 105, 0.726), rgba(11, 40, 65, 0.425)), 
+                url('../../assets/giving.avif') fixed center center / cover !important;
+}
+
+
+.giving-options p {
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding-top: 13rem;
+}
+
+.donation-methods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1;
+    width: 100%; /* Ensure full width */
+}
+
+.donation-method {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.donation-method:hover {
+    background-color: #388e3c;
+}
+
+.thank-support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 50px 20px; /* Add padding for spacing */
+}
+
+.thank-support-h1 {
+    width: 40%;
+    text-align: left; /* Align text to the left */
+    border-right: 3px solid #081F54; /* Add the vertical divider */
+
+}
+
+.thank-support-h1 h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    height: 350px;
+    margin-left: 200px;
+    font-weight: bold;
+    color: #081F54;
+}
+
+.thank-support-para {
+    width: 40%;
+    text-align: left; 
+    font-size: 1.2rem;
+    color: #555; 
+    line-height: 1.6;
+    margin-right: 180px;
+    margin-top: -50px;
+}
+
+.giving-ways {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #081F54;
+    font-size: 2.5rem; 
+    margin: 20px 0; 
+    text-align: center;
+}
+
+.give {
+    margin-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; /* Adjust as needed */
+  }
+  
+  .section {
+    flex: 1 1 50%; /* Each section occupies 50% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    height: 550px;
+  }
+  
+  .section-1 {
+    position: relative;
+  }
+  
+  .paypal-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .give h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #081F54 ;
+}
+
+ .section-2{
+position: relative;
+display: block;
+background: linear-gradient(to right, #1F3A6A, #304f81, #4975b3, #254876, #304B77);
+color: white;
+text-align: center;
+padding: 50px 0; /* Adjust padding as needed */
+}
+
+.section-2 h1{
+    margin-top: 10px;
+color: white;
+
+}
+
+.section-2 p{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.give-with-paypal-btn {
+    background-color: transparent; 
+    display: flex;
+    color: white;
+    font-size: 16px;
+    margin-top: 200px;
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid ;
+    border-radius: 0; /* Ensure no rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 40%;
+}
+
+
+.give-with-paypal-btn:hover {
+    background-color: #005ea6; /* Darker blue on hover */
+}
+
+.section-3 {
+    position: relative;
+    margin-top: -50px;
+}
+
+.section-4{
+    position: relative;
+    display: block;
+    background: linear-gradient(to right, #1F3A6A, #304f81, #4975b3, #254876, #304B77);
+    color: white;
+    margin-top: -50px;
+    text-align: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    }
+    
+    .section-4 h1{
+    margin-top: 10px;
+    color: white;
+    
+    }
+
+    .section-4 p{
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+    }
+    .mobile-bank-transfer {
+        position: relative;
+        background: url('../../assets/church-giving.avif') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px 5%;
+        min-height: 600px; /* Adjust height as needed */
+        color: white;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    /* Overlay */
+    .mobile-bank-transfer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(47, 65, 92, 0.74); /* Adjust transparency */
+        border-radius: 10px;
+        z-index: -1;
+    }
+    
+    /* Styling for each flex box */
+    .mobile-bank-transfer > div {
+        flex: 1;
+        background: rgba(44, 68, 121, 0.185); /* Slight transparency */
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        color: white;
+        border: solid rgba(241, 236, 236, 0.979);
+        font-size: 18px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .mobile-bank-transfer h1{
+        color: white;
+    }
+    
+    .mobile-payements{
+        list-style: none;
+        display: flex;
+        gap: 5px;
+        width: 100%;
+
+    }
+
+    .mpesa-airtel{
+        margin-right: 50px;
+    }
+    .tigo-halo{
+        margin-left: 20px;
+    }
+    .mpesa{
+        margin-top: 20px;
+        background-color: rgb(220 38 38/var(--tw-text-opacity,1));
+        padding: 12px;
+        border-radius: 5px;
+    } 
+    .airtel-money{
+        margin-top: 100px;
+        background-color: #e40000;
+        padding: 12px;
+        border-radius: 5px;
+
+    }
+    .tigo-pesa{
+        margin-top: 20px;
+        background-color: #00377D;
+        padding: 12px;
+        border-radius: 5px;
+
+    }
+
+    .halopesa{
+        margin-top: 100px;
+        background-color: #fd7e14;
+        padding: 12px;
+        border-radius: 5px;
+    }
+    .mpesa-no{
+        margin-top: 10px;
+    }
+
+    .bank-payements{
+        list-style: none;
+        display: flex;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .crdb-nmb{
+        margin-right: 50px;
+
+    }
+
+    .crdb{
+        margin-top: 20px;
+        background-color: rgba(7, 112, 7, 0.822);
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    .nmb{
+        margin-top: 100px;
+        background-color: #2a6bb6;
+        padding: 12px;
+        border-radius: 5px;
+
+    }
+    .stanbic{
+        margin-top: 20px;
+        background-color: #1A314D;
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    .stanbic-nbc{
+        margin-left: 20px;
+
+    }
+
+    .nbc{
+        background-color: #224893;
+        padding: 12px;
+        border-radius: 5px;  
+        margin-top: 100px;
+
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .mobile-bank-transfer {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    

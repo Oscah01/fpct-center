@@ -1,65 +1,50 @@
-.container-before-footer {
-    display: flex;
-    background-color: rgba(17, 49, 94, 0.801);
-    height: 170px;
-    margin-top: 0.1px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
+.visit {
     width: 100%;
-
+    margin-top: 40px;
 }
 
-.container-before-footer-visit{
+.plan-to-visit {
+    position: relative; /* Ensure content stays positioned */
+    align-items: center;
+    justify-content: center;
     width: 100%;
     display: flex;
-    background-color: rgba(17, 49, 94, 0.801);
-    height: 170px;
-    margin-top: 60px;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
-
+    height: auto;
+    padding: 20px 0; /* Adjust padding for spacing */
+    
+    /* Background with linear gradient overlay */
+    background: linear-gradient(rgba(15, 63, 105, 0.89), rgb(4, 38, 68)), 
+                url('../../assets/church-giving.avif') fixed center center / cover !important;
 }
 
-.bofore-footer {
-    color: aliceblue;
-}
-a { 
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+.plan-to-visit h1, .plan-to-visit p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: white; /* Ensure text visibility */
 }
 
-a:hover{
-    color: #3e3d3db3;
-}
-.bofore-footer h1 {
-    margin: 0;
-    font-size: 24px;
+.plan-to-visit-para {
+    margin-left: 100px;
 }
 
-.bofore-footer p {
-    margin: 10px 0 0 0;
+.plan-to-visit-btn {
+    margin-right: 200px;
 }
 
-.right-before-footer {
-    margin-right: 5%;
-}
-
-.right-before-footer button {
-    padding: 10px 20px; /* Adjust padding for better appearance */
-    font-size: 16px;
+/* Button styling */
+.plan-to-visit-btn button {
+    background-color: transparent;
+    border: 2px solid white; /* White border for contrast */
     color: white;
-    background-color: #b57d0e; /* Button color */
-    border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-.right-before-footer button:hover {
-    background-color: #39290a; /* Hover color */
+.plan-to-visit-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light hover effect */
 }

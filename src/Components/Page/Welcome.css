@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 230px;
+}
+
+.welcome-left {
+  flex: 1;
+  max-width: 40%;
+  margin-top: -60px;
+}
+
+.welcome-left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.welcome-left p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.welcome-left a {
+  color: #ffa500;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.welcome-right {
+  flex: 3;
+  display: flex;
+  height: 300px;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  z-index: 50;
+  height: 450px;
+  margin-top: -180px;
+  margin-left: 70px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Description and Title combined on hover */
+.info-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(49, 48, 48);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 60%; /* Takes 60% of the card height */
+  opacity: 0;
+  transform: translateY(100%); /* Start hidden below the card */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Title at the bottom, overlaying the description */
+.card-title {
+  position: relative;
+  bottom: 20px; /* Adjust to be 20px from the bottom */
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Reveal the description and title on hover */
+.card:hover .info-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.polygon-shape {
+  position: absolute;
+  left: 37%;
+  width: 70%;
+  margin-top: -140px;
+  height: 250px; /* Adjust as needed */
+  background: linear-gradient(135deg, #f39109, #f39109);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  transform: translate3d(0px, 179px, 0px); /* Move the shape down */
+  z-index: -1; /* Ensure it is behind other elements */
+}
+
+.media-display-full-left .polygon-shape, 
+.media-display-full-right .polygon-shape {
+  display: none;
+  position: absolute;
+  height: 130px;
+  background-color: #f39109; /* Fallback background color */
+}
+

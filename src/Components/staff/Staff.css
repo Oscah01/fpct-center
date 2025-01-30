@@ -1,0 +1,67 @@
+.management-staff {
+    padding: 20px;
+  }
+  
+  .row {
+    
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .staff-card {
+    border: solid red;
+   
+    display: flex;
+    width: 370px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .staff-image {
+    width: 40%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px; /* Add spacing between image and text */
+  }
+  
+  .staff-info {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column; /* Stack name and position vertically */
+    justify-content: center;
+    flex-grow: 1; /* Allow it to occupy remaining space */
+  }
+  
+  .staff-name {
+    font-size: 18px;
+    color: #bd940c;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add spacing between name and position */
+  }
+  
+  .staff-position {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .staff-header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 90px; 
+  }
+  
+  .staff-header h1{
+    text-align: center;
+    background-color: #081F54;
+    color: #b57d0e;
+    padding: 40px 10px;
+    width: 100%; 
+  }

@@ -1,0 +1,134 @@
+/* General Styles */
+.sermons-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  .sermons-header {
+    text-align: center;
+    background-color: #081F54;
+    color: white;
+    padding: 30px 10px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .sermons-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b57d0e;
+  }
+  
+  .sermons-header p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  /* Sermon Grid */
+  .sermons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .sermon-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .sermon-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sermon-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .sermon-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .sermon-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .watch-button {
+    background-color: #b57d0e;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .watch-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .download-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Featured Sermon Section */
+  .featured-sermon {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  .featured-sermon h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: black;
+  }
+  
+  .featured-sermon-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .featured-sermon-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .featured-sermon-content button {
+    background-color: #b57d0e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .featured-sermon-content button:hover {
+    background-color: #388e3c;
+  }
+  

@@ -1,0 +1,130 @@
+/* Wrapper and General Styles */
+.bible-study-wrapper {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .bible-study-hero {
+    text-align: center;
+    background-color: #081F54;
+    color: white;
+    padding: 30px 10px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .bible-study-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b57d0e;
+  }
+  
+  .bible-study-hero p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Content Sections */
+  .bible-study-content {
+    margin-top: 30px;
+  }
+  
+  /* Section Titles */
+  .study-section h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  /* Topics Grid */
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .topic-card {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .topic-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .topic-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .topic-card p {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  /* Resources List */
+  .resources-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .resource-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resource-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    color: #fff;
+    background: #b57d0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #388e3c;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    text-align: center;
+    background: #e8f5e9;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section button {
+    margin: 5px;
+  }
+  

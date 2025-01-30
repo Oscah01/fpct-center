@@ -2,6 +2,12 @@ import './NewsCentre.css'
 import { announcementsInfo, documentsInfo, postsInfo } from './newsData.jsx'
 const NewsCentre = () => {
   return (
+    <>
+    <div className="news-page">
+    <h1>News Center</h1>
+    <h2>Our Recent News</h2>
+    </div>
+  
     <section className='news-container'>
       <div>
           <hr className='news-hr'/>
@@ -76,6 +82,8 @@ const NewsCentre = () => {
           </div>
       </div>
     </section>
+    </>
+
   )
 }
 
